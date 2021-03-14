@@ -55,30 +55,31 @@ class Node:
         return int(hashlib.sha1((key).encode()).hexdigest(), 16) % ringSize
 
     def redistribute(self,request) -> None:
-        key_hash = request['redistribute']['key']
+        key = request['redistribute']['key']
         value = request['redistribute']['value']
         ownerID = request['redistribute']['ownerID']
         replicaCount = int(request['redistribute']['replicaCount'])
-        self.data[key_hash] = {'value':value,'replicaCount': k-replicaCount,'ownerID':ownerID }
+        self.data[key] = {'value':value,'replicaCount': k-replicaCount,'ownerID':ownerID }
         request['redistribute']['replicaCount'] = replicaCount + 1
         if( self.next.id != ownerID and request['redistribute']['replicaCount'] == k):
             print('Sending %s to %s' % (repr(request),self.next.ip))
             self.next.connection.send(json.dumps(request))
 
     def insert(self, request):
-        hash_key = int(request['insert']['key'])
+        key = request['insert']['key']
+        hash_key = self.hash(key)
         value = request['insert']['value']
         replicaCount = int(request['insert']['replicaCount'])
         if(self.isResponsible(hash_key) or replicaCount > 0):
-            self.data[hash_key] = {'value':value,'replicaCount': replicaCount }
+            self.data[key] = {'value':value,'replicaCount': replicaCount }
             if(self.isResponsible(hash_key)):
                 print("I'm responsible for insert with hash key %s and value %s" % (hash_key,value))
                 request['insert']['ownerID']=self.id
             else:
                 print("I'm replica number %s for hash key %s" % (replicaCount,hash_key))
-            self.data[hash_key]['ownerID']=int(request['insert']['ownerID'])
+            self.data[key]['ownerID']=int(request['insert']['ownerID'])
             request['insert']['replicaCount'] = replicaCount + 1
-            if( request['insert']['replicaCount'] == k or self.data[hash_key]['ownerID'] == self.next.id or self.data[hash_key]['ownerID'] == self.id):
+            if( request['insert']['replicaCount'] == k or self.data[key]['ownerID'] == self.next.id or self.data[key]['ownerID'] == self.id):
                 return self.sendResponse(request,'Finished adding all replicas')
             else:
                 self.send(request,self.next)
@@ -87,9 +88,10 @@ class Node:
             return self.send(request,self.previous)
 
     def delete(self,request):
-        hash_key = request['delete']['key']
+        key = request['delete']['key']
+        hask_key = self.hash(key)
         if(self.isResponsible(hash_key)):
-            self.data.pop(hash_key)
+            self.data.pop(key)
             return self.sendResponse(request,'OK')
         else:
             return self.send(request,self.next)
@@ -136,14 +138,14 @@ class Node:
 
 
     def query(self,request):
-        requestData = json.dumps(request)
-        hash_key = requestData['query']['key']
+        key = request['query']['key']
+        hash_key = self.hash(key)
         if(self.isResponsible(hash_key)):
-            if hash_key in self.data:
-                resp = 'Query result is %s from %s with id %s' % (self.data[hash_key],self.ip,self.id)
+            if key in self.data:
+                resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
                 return self.sendResponse(request,resp)
             else:
-                return self.sendResponse(request,"Key hash %s doesn't exist in the DHT" % hash_key)
+                return self.sendResponse(request,"Key %s doesn't exist in the DHT" % key)
         else:
             return self.send(request,self.next)
 

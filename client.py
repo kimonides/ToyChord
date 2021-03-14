@@ -49,24 +49,22 @@ elif(cmd=='2' or cmd=='depart'):
 elif(cmd=='3' or cmd=='insert'):
     key = input('Key:')
     value = input('Value:')
-    key_hash = hash(key)
+    # key_hash = hash(key)
     msg['type'] = 'insert'
     msg['insert'] = {
-        'key':key_hash,
+        'key':key,
         'value':value,
         'replicaCount':0
     }
 elif(cmd=='4' or cmd=='delete'):
     key = input('Key:')
-    key_hash = hash(key)
+    # key_hash = hash(key)
     msg['type'] = 'delete'
     msg['delete'] = {
-        'key':key_hash
+        'key':key
     }
 elif(cmd=='5' or cmd=='query'):
     key = input('Key:')
-    if(key != '*'):
-        key = hash(key)
     msg['type'] = 'query'
     msg['query'] = {
         'key':key
@@ -79,10 +77,11 @@ else:
 msg['responseNodeIP'] = responseIP
 msg['responseNodePort'] = str(responsePort)
 msg = json.dumps(msg)
+msg += '\r'
 
 print(repr('Sending %s' % msg))
 socket.sendall(msg.encode())
-print('Received %s' % socket.recv(1023).decode())
+print('Received %s' % socket.recv(999999).decode())
 
 
 

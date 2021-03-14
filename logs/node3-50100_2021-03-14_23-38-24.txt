@@ -1,0 +1,12 @@
+My ip is 192.168.1.3
+192.168.1.3:50100 with id 33 starting to listen
+Received '{"ip": "192.168.1.2", "type": "prev", "port": 42069}' from ('192.168.1.1', 47596)
+Added 192.168.1.2:42069 as previous
+Received '{"ip": "192.168.1.1", "type": "next", "port": 50100}' from ('192.168.1.1', 47598)
+Added 192.168.1.1:50100 as next
+Received '{"join": {"ip": "192.168.1.4", "port": "42069"}, "responseNodePort": "42069", "type": "join", "responseNodeIP": "192.168.1.5", "requestID": "f822a31c-e8f0-49c7-8b69-7f434abc03c0"}' from ('192.168.1.2', 57904)
+Sending {'type': 'join', 'responseNodeIP': '192.168.1.5', 'requestID': 'f822a31c-e8f0-49c7-8b69-7f434abc03c0', 'responseNodePort': '42069', 'join': {'ip': '192.168.1.4', 'port': '42069'}} to 192.168.1.1:50100
+Received '{"join": {"ip": "192.168.1.4", "port": "50100"}, "responseNodePort": "42069", "type": "join", "responseNodeIP": "192.168.1.5", "requestID": "c6e51322-d163-4c02-aea3-874ff383979a"}' from ('192.168.1.2', 57914)
+Sending {'type': 'join', 'responseNodeIP': '192.168.1.5', 'requestID': 'c6e51322-d163-4c02-aea3-874ff383979a', 'responseNodePort': '42069', 'join': {'ip': '192.168.1.4', 'port': '50100'}} to 192.168.1.1:50100
+Received '{"ip": "192.168.1.4", "type": "next", "port": "50100"}' from ('192.168.1.1', 47604)
+Added 192.168.1.4:50100 as next

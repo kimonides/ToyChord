@@ -59,7 +59,7 @@ class Server:
 
     def listen(self) -> None:
         async def handle_client(reader, writer):
-            data = await reader.read(2056)
+            data = await reader.read(999999)
             message = data.decode()
             addr = writer.get_extra_info('peername')
             print("Received %r from %r" % (message, addr))
