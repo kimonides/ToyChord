@@ -69,7 +69,7 @@ class Node:
         hash_key = int(request['insert']['key'])
         value = request['insert']['value']
         replicaCount = int(request['insert']['replicaCount'])
-        if(self.isResponsible(hash_key) or replicaCount < k):
+        if(self.isResponsible(hash_key) or replicaCount > 0):
             self.data[hash_key] = {'value':value,'replicaCount': replicaCount }
             if(self.isResponsible(hash_key)):
                 print("I'm responsible for insert with hash key %s and value %s" % (hash_key,value))

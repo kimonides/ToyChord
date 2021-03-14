@@ -18,7 +18,7 @@ while IFS=',' read key value
 do
     index=$(($RANDOM % $size))
     read -a strarr <<< "${VMs[$index]}"
-    printf "3\n$key\n$value" | python3 client.py ${strarr[0]} ${strarr[1]} > /dev/null & 
+    printf "3\n$key\n$value" | python3 client.py ${strarr[0]} ${strarr[1]} & 
 done < insert.txt
 
 wait $!
