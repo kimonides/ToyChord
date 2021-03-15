@@ -135,9 +135,6 @@ class Node:
         else:
             return self.send(request,self.next)
 
-
-    
-
     def query(self,request):
         key = request['query']['key']
         hash_key = self.hash(key)

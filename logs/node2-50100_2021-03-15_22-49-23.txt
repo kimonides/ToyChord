@@ -1,2 +1,0 @@
-My ip is 192.168.1.4
-192.168.1.4:50100 with id 37 starting to listen
