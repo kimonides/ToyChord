@@ -1,4 +1,5 @@
 # !/bin/bash
+cd ..
 python3 -u startNode.py 42069 > ./logs/"$(date +node0-42069_%F_%H-%M-%S.txt)" &
 python3 -u startNode.py 50100 > ./logs/"$(date +node0-50100_%F_%H-%M-%S.txt)" &
 

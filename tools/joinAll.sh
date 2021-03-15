@@ -1,3 +1,5 @@
+cd ..
+
 printf "1\n192.168.1.5\n50100" | python3 client.py 192.168.1.5 42069 
 
 printf "1\n192.168.1.1\n42069" | python3 client.py 192.168.1.5 42069 
