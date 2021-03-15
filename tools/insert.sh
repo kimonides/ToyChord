@@ -19,7 +19,7 @@ do
     index=$(($RANDOM % $size))
     read -a strarr <<< "${VMs[$index]}"
     echo '{"responseNodePort": "'"${strarr[1]}"'", "insert": {"key": "'"$key"'", "replicaCount": 0, "value": "'"$value"'"}, "type": "insert", "responseNodeIP": "'"${strarr[0]}"'"}'\
-    | nc ${strarr[0]} ${strarr[1]} > /dev/null &
+    | nc ${strarr[0]} ${strarr[1]} &
 done < insert.txt
 
 wait

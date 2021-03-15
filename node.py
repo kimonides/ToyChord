@@ -18,6 +18,7 @@ k = int(config['DEFAULT']['k'])
 
 class Node:
     def __init__(self, ip, port) -> None:
+        print('K is %s' % k)
         self.ip = ip
         self.port = int(port)
         self.id = self.hash('%s:%s' % (self.ip,self.port))
@@ -79,7 +80,7 @@ class Node:
                 print("I'm replica number %s for hash key %s" % (replicaCount,hash_key))
             self.data[key]['ownerID']=int(request['insert']['ownerID'])
             request['insert']['replicaCount'] = replicaCount + 1
-            if( request['insert']['replicaCount'] == k or self.data[key]['ownerID'] == self.next.id or self.data[key]['ownerID'] == self.id):
+            if( request['insert']['replicaCount'] == k or self.data[key]['ownerID'] == self.next.id):
                 return self.sendResponse(request,'Finished adding all replicas\n')
             else:
                 self.send(request,self.next)
@@ -139,18 +140,19 @@ class Node:
         key = request['query']['key']
         hash_key = self.hash(key)
         if(key == '*'):
-            for k,v in self.data.items():
+            for kk,v in self.data.items():
                 if v['replicaCount'] == 0 :
                     if('response' in request):
-                        request['response'] += ', %s:%s' % (k,v['value'])
+                        request['response'] += ', %s:%s' % (kk,v['value'])
                     else:
-                        request['response'] = '%s:%s' % (k,v['value'])
+                        request['response'] = '%s:%s' % (kk,v['value'])
             if(self.next.ip == request['responseNodeIP'] and self.next.port == int(request['responseNodePort'])):
                 response = request['response']
                 return self.sendResponse(request,response)
             else:
                 return self.send(request,self.next)
-        elif(self.isResponsible(hash_key)):
+        elif(key in self.data and (self.data[key]['replicaCount'] == k-1 or self.next.ip == request['responseNodeIP'] and self.next.port == int(request['responseNodePort']))):
+        # elif(self.isResponsible(hash_key)):
             if key in self.data:
                 resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
                 return self.sendResponse(request,resp)
