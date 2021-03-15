@@ -1,9 +1,0 @@
-My ip is 192.168.1.2
-192.168.1.2:50100 with id 57 starting to listen
-Received '{"port": 50100, "type": "prev", "ip": "192.168.1.1"}' from ('192.168.1.1', 59770)
-Added 192.168.1.1:50100 as previous
-Received '{"port": 42069, "type": "next", "ip": "192.168.1.1"}' from ('192.168.1.1', 59772)
-Added 192.168.1.1:42069 as next
-Received '{"requestID": "f822a31c-e8f0-49c7-8b69-7f434abc03c0", "responseNodeIP": "192.168.1.5", "responseNodePort": "42069", "type": "join", "join": {"ip": "192.168.1.4", "port": "42069"}}' from ('192.168.1.1', 59784)
-Added 192.168.1.4:42069 as previous
-Redistributing data to 192.168.1.4 with id 56

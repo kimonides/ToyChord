@@ -59,7 +59,7 @@ class Server:
 
     def listen(self) -> None:
         async def handle_client(reader, writer):
-            data = await reader.read(999999)
+            data = await reader.read(999999999)
             message = data.decode()
             addr = writer.get_extra_info('peername')
             print("Received %r from %r" % (message, addr))
@@ -81,15 +81,4 @@ class Server:
         loop = asyncio.get_event_loop()
         loop.create_task(asyncio.start_server(handle_client, self.ip, self.port))
         loop.run_forever()
-
-
-#   responses
-#   response: requestID,result
-#
-#   requests
-#
-#   insert:key,value
-#   ResponseNodeIP
-#   ResponseNodePort
-#   requestID
-#   
+ 

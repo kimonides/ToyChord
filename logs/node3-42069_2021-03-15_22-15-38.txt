@@ -1,0 +1,777 @@
+My ip is 192.168.1.3
+192.168.1.3:42069 with id 6 starting to listen
+Received '{"type": "prev", "port": 50100, "ip": "192.168.1.5"}' from ('192.168.1.5', 56664)
+Added 192.168.1.5:50100 as previous
+Received '{"type": "next", "port": 42069, "ip": "192.168.1.5"}' from ('192.168.1.5', 56666)
+Added 192.168.1.5:42069 as next
+Received '{"type": "insert", "requestID": "de6c501f-bb4f-4abf-93bf-4a377aa99561", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 1", "replicaCount": 0, "key": "Like a Rolling Stone"}}' from ('192.168.1.5', 56682)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 1', 'key': 'Like a Rolling Stone'}, 'type': 'insert', 'requestID': 'de6c501f-bb4f-4abf-93bf-4a377aa99561', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Imagine", "replicaCount": 0, "value": " 3"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 56686)
+I'm not responsible for id 58 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Imagine', 'value': ' 3'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'ebcc2e34-c0fc-47a1-940b-96cc17be6868', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id ebcc2e34-c0fc-47a1-940b-96cc17be6868
+Received '{"response": "Finished adding all replicas\\n", "type": "response", "requestID": "ebcc2e34-c0fc-47a1-940b-96cc17be6868"}' from ('192.168.1.1', 54946)
+Received '{"type": "insert", "requestID": "0d9986ac-9a95-459c-b3bc-135868d2a7e1", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 10", "replicaCount": 0, "key": "What\'d I Say"}}' from ('192.168.1.5', 56714)
+I'm not responsible for id 35 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 10', 'key': "What'd I Say"}, 'type': 'insert', 'requestID': '0d9986ac-9a95-459c-b3bc-135868d2a7e1', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "b46ba1f8-185c-41f1-b5f6-0735f340634a", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 14", "replicaCount": 0, "key": "Blowin\' in the Wind"}}' from ('192.168.1.5', 56722)
+I'm responsible for insert with hash key 0 and value  14
+Received '{"responseNodePort": "42069", "requestID": "1416dd9d-a9a6-4b60-8bd1-db88ca240366", "responseNodeIP": "192.168.1.2", "insert": {"value": " 17", "replicaCount": 0, "key": "Purple Haze"}, "type": "insert"}' from ('192.168.1.5', 56736)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 17', 'key': 'Purple Haze'}, 'type': 'insert', 'requestID': '1416dd9d-a9a6-4b60-8bd1-db88ca240366', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "London Calling", "replicaCount": 0, "value": " 15"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 56740)
+I'm not responsible for id 36 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'London Calling', 'value': ' 15'}, 'responseNodeIP': '192.168.1.3', 'requestID': '7851233a-1b68-40b6-ad0d-751c7cf3b8a1', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 7851233a-1b68-40b6-ad0d-751c7cf3b8a1
+Received '{"response": "Finished adding all replicas\\n", "requestID": "7851233a-1b68-40b6-ad0d-751c7cf3b8a1", "type": "response"}' from ('192.168.1.4', 36370)
+Received '{"responseNodePort": "42069", "insert": {"key": "Born to Run", "replicaCount": 0, "value": " 21"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 56744)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Born to Run', 'value': ' 21'}, 'responseNodeIP': '192.168.1.3', 'requestID': '9981d441-4ded-4c9b-a2e1-4d75b611f6bf', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 9981d441-4ded-4c9b-a2e1-4d75b611f6bf
+Received '{"type": "insert", "requestID": "d5a94e22-a35d-48cf-8cbf-9a8ddfb8e08f", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 25", "replicaCount": 0, "key": "God Only Knows"}}' from ('192.168.1.5', 56758)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 25', 'key': 'God Only Knows'}, 'type': 'insert', 'requestID': 'd5a94e22-a35d-48cf-8cbf-9a8ddfb8e08f', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "7401a494-0608-4e07-88db-e83667128f7c", "responseNodeIP": "192.168.1.2", "insert": {"value": " 19", "replicaCount": 0, "key": "Hound Dog"}, "type": "insert"}' from ('192.168.1.5', 56762)
+I'm not responsible for id 49 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 19', 'key': 'Hound Dog'}, 'type': 'insert', 'requestID': '7401a494-0608-4e07-88db-e83667128f7c', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "type": "response", "requestID": "9981d441-4ded-4c9b-a2e1-4d75b611f6bf"}' from ('192.168.1.2', 59696)
+Received '{"type": "insert", "requestID": "27607318-a66a-4772-abc5-d3785434e6de", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 24", "replicaCount": 0, "key": "People Get Ready"}}' from ('192.168.1.5', 56768)
+I'm responsible for insert with hash key 6 and value  24
+Received '{"type": "insert", "requestID": "da1f08ec-3e60-4917-afe8-c0cb56474441", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 36", "replicaCount": 0, "key": "One"}}' from ('192.168.1.5', 56790)
+I'm not responsible for id 49 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 36', 'key': 'One'}, 'type': 'insert', 'requestID': 'da1f08ec-3e60-4917-afe8-c0cb56474441', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "1b882a80-c95f-4676-bc60-300a93c2f924", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 35", "replicaCount": 0, "key": "Light My Fire"}}' from ('192.168.1.5', 56792)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 35', 'key': 'Light My Fire'}, 'type': 'insert', 'requestID': '1b882a80-c95f-4676-bc60-300a93c2f924', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "1d51651b-1d6f-4fcf-baa1-bf864a361763", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 33", "replicaCount": 0, "key": "River Deep - Mountain High"}}' from ('192.168.1.5', 56802)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 33', 'key': 'River Deep - Mountain High'}, 'type': 'insert', 'requestID': '1d51651b-1d6f-4fcf-baa1-bf864a361763', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "4e4a9ff0-1f10-426e-8830-4030465dc2d5", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 32", "replicaCount": 0, "key": "Sympathy for the Devil"}}' from ('192.168.1.5', 56808)
+I'm not responsible for id 40 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 32', 'key': 'Sympathy for the Devil'}, 'type': 'insert', 'requestID': '4e4a9ff0-1f10-426e-8830-4030465dc2d5', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "a3b0558f-834e-4916-b3ca-a01a56741426", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 29", "replicaCount": 0, "key": "Help!"}}' from ('192.168.1.5', 56814)
+I'm responsible for insert with hash key 4 and value  29
+Received '{"type": "insert", "requestID": "cefef609-fad1-44dd-aea1-a9f3889f94b7", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 31", "replicaCount": 0, "key": "Stairway To Heaven"}}' from ('192.168.1.5', 56826)
+I'm responsible for insert with hash key 5 and value  31
+Received '{"type": "insert", "requestID": "7b9b5cfe-efc5-4601-a32a-17ad0afc90c8", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 40", "replicaCount": 0, "key": "Dancing in the Street"}}' from ('192.168.1.5', 56838)
+I'm not responsible for id 45 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 40', 'key': 'Dancing in the Street'}, 'type': 'insert', 'requestID': '7b9b5cfe-efc5-4601-a32a-17ad0afc90c8', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Waterloo Sunset", "replicaCount": 0, "value": " 42"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 56828)
+I'm responsible for insert with hash key 6 and value  42
+Received '{"type": "insert", "requestID": "92be89f7-219e-414d-bbab-fb9a23ccae45", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 39", "replicaCount": 0, "key": "That\'ll Be the Day"}}' from ('192.168.1.5', 56842)
+I'm not responsible for id 41 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 39', 'key': "That'll Be the Day"}, 'type': 'insert', 'requestID': '92be89f7-219e-414d-bbab-fb9a23ccae45', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "b2d56a5f-79d9-4741-ba2b-a271fd732467", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 41", "replicaCount": 0, "key": "The Weight"}}' from ('192.168.1.5', 56844)
+I'm responsible for insert with hash key 62 and value  41
+Received '{"type": "insert", "requestID": "e7118de6-d912-4a71-a42f-7869bd300734", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 44", "replicaCount": 0, "key": "Georgia on My Mind"}}' from ('192.168.1.5', 56850)
+I'm not responsible for id 59 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 44', 'key': 'Georgia on My Mind'}, 'type': 'insert', 'requestID': 'e7118de6-d912-4a71-a42f-7869bd300734', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Billie Jean", "replicaCount": 0, "value": " 58"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 56848)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Billie Jean', 'value': ' 58'}, 'responseNodeIP': '192.168.1.3', 'requestID': '5be81795-b57c-4555-9ba7-e0cd7e9db1ba', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 5be81795-b57c-4555-9ba7-e0cd7e9db1ba
+Received '{"response": "Finished adding all replicas\\n", "type": "response", "requestID": "5be81795-b57c-4555-9ba7-e0cd7e9db1ba"}' from ('192.168.1.2', 59748)
+Received '{"type": "insert", "requestID": "73e8e7ff-e2d9-4512-a8b6-43137f6ac658", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 59", "replicaCount": 0, "key": "The Times They Are A-Changin\'"}}' from ('192.168.1.5', 56874)
+I'm responsible for insert with hash key 0 and value  59
+Received '{"type": "insert", "requestID": "690e5584-1dd3-4b2b-b24a-f61a8997aab2", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 48", "replicaCount": 0, "key": "All Along the Watchtower"}}' from ('192.168.1.5', 56892)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 48', 'key': 'All Along the Watchtower'}, 'type': 'insert', 'requestID': '690e5584-1dd3-4b2b-b24a-f61a8997aab2', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "ec83554d-266d-4561-bbf2-86b1a637537f", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 62", "replicaCount": 0, "key": "Bo Diddley"}}' from ('192.168.1.5', 56898)
+I'm not responsible for id 59 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 62', 'key': 'Bo Diddley'}, 'type': 'insert', 'requestID': 'ec83554d-266d-4561-bbf2-86b1a637537f', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "87f7daba-5e91-4fd2-a568-dc3af92e941f", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 60", "replicaCount": 0, "key": "Let\'s Stay Together"}}' from ('192.168.1.5', 56902)
+I'm responsible for insert with hash key 62 and value  60
+Received '{"type": "insert", "requestID": "0816ac8f-e91b-4925-a585-0bc2569e6fb0", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 52", "replicaCount": 0, "key": "When Doves Cry"}}' from ('192.168.1.5', 56918)
+I'm not responsible for id 46 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 52', 'key': 'When Doves Cry'}, 'type': 'insert', 'requestID': '0816ac8f-e91b-4925-a585-0bc2569e6fb0', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "8e011d9e-4d13-4801-9178-46e00dd391eb", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 49", "replicaCount": 0, "key": "Hotel California"}}' from ('192.168.1.5', 56928)
+I'm not responsible for id 49 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 49', 'key': 'Hotel California'}, 'type': 'insert', 'requestID': '8e011d9e-4d13-4801-9178-46e00dd391eb', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "6c0fc49b-da5a-406c-bb46-7b8903db4bfe", "responseNodeIP": "192.168.1.2", "insert": {"value": " 51", "replicaCount": 0, "key": "The Message"}, "type": "insert"}' from ('192.168.1.5', 56934)
+I'm not responsible for id 36 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 51', 'key': 'The Message'}, 'type': 'insert', 'requestID': '6c0fc49b-da5a-406c-bb46-7b8903db4bfe', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "72c7c735-f8fa-4cd0-9835-75a5bb89e33b", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 46", "replicaCount": 0, "key": "Heroes"}}' from ('192.168.1.5', 56944)
+I'm responsible for insert with hash key 6 and value  46
+Received '{"responseNodePort": "42069", "requestID": "d2bf9ef2-0e3f-4c23-8d8a-a49b0b60d50d", "responseNodeIP": "192.168.1.2", "insert": {"value": " 70", "replicaCount": 0, "key": "Walk On By"}, "type": "insert"}' from ('192.168.1.5', 56958)
+I'm not responsible for id 28 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 70', 'key': 'Walk On By'}, 'type': 'insert', 'requestID': 'd2bf9ef2-0e3f-4c23-8d8a-a49b0b60d50d', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "87fe351c-dd87-4a00-a288-f3155c92bcf9", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 68", "replicaCount": 0, "key": "Tangled Up in Blue"}}' from ('192.168.1.5', 56962)
+I'm responsible for insert with hash key 5 and value  68
+Received '{"type": "insert", "requestID": "15d98914-fd6f-48cc-8329-ed6c74640983", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 73", "replicaCount": 0, "key": "Summertime Blues"}}' from ('192.168.1.5', 56970)
+I'm not responsible for id 50 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 73', 'key': 'Summertime Blues'}, 'type': 'insert', 'requestID': '15d98914-fd6f-48cc-8329-ed6c74640983', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Crazy", "replicaCount": 0, "value": " 85"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 56976)
+I'm not responsible for id 14 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Crazy', 'value': ' 85'}, 'responseNodeIP': '192.168.1.3', 'requestID': '16abd0a4-bd45-4d77-90c7-d67f31d6d49a', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 16abd0a4-bd45-4d77-90c7-d67f31d6d49a
+Received '{"type": "insert", "requestID": "fa8c6730-25b2-4773-a114-feb3562c9c59", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 77", "replicaCount": 0, "key": "Mystery Train"}}' from ('192.168.1.5', 56986)
+I'm not responsible for id 59 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 77', 'key': 'Mystery Train'}, 'type': 'insert', 'requestID': 'fa8c6730-25b2-4773-a114-feb3562c9c59', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "16abd0a4-bd45-4d77-90c7-d67f31d6d49a", "type": "response"}' from ('192.168.1.2', 59830)
+Received '{"responseNodePort": "42069", "insert": {"key": "You Really Got Me", "replicaCount": 0, "value": " 82"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57012)
+I'm not responsible for id 33 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'You Really Got Me', 'value': ' 82'}, 'responseNodeIP': '192.168.1.3', 'requestID': '19f6331d-1f53-4995-8530-5265cb373bfe', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 19f6331d-1f53-4995-8530-5265cb373bfe
+Received '{"responseNodePort": "42069", "insert": {"key": "I Still Haven\'t Found What I\'m Looking For", "replicaCount": 0, "value": " 93"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57016)
+I'm responsible for insert with hash key 3 and value  93
+Received '{"type": "insert", "requestID": "cf0db243-1323-434b-80b0-03e93df40f66", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 83", "replicaCount": 0, "key": "Norwegian Wood (This Bird Has Flown)"}}' from ('192.168.1.5', 57018)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 83', 'key': 'Norwegian Wood (This Bird Has Flown)'}, 'type': 'insert', 'requestID': 'cf0db243-1323-434b-80b0-03e93df40f66', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "caf62092-5cbb-4e4d-b04d-c3b059ae849b", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 84", "replicaCount": 0, "key": "Every Breath You Take"}}' from ('192.168.1.5', 57022)
+I'm not responsible for id 46 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 84', 'key': 'Every Breath You Take'}, 'type': 'insert', 'requestID': 'caf62092-5cbb-4e4d-b04d-c3b059ae849b', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "f3a19ced-d975-4176-8351-bc45b1c26ff2", "responseNodeIP": "192.168.1.2", "insert": {"value": " 89", "replicaCount": 0, "key": "California Dreamin\'"}, "type": "insert"}' from ('192.168.1.5', 57026)
+I'm not responsible for id 22 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 89', 'key': "California Dreamin'"}, 'type': 'insert', 'requestID': 'f3a19ced-d975-4176-8351-bc45b1c26ff2', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"requestID": "19f6331d-1f53-4995-8530-5265cb373bfe", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 53752)
+Received '{"type": "insert", "requestID": "f5bf42be-0d24-474e-afca-50b31db34aea", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 101", "replicaCount": 0, "key": "Voodoo Child (Slight Return)"}}' from ('192.168.1.5', 57056)
+I'm not responsible for id 56 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 101', 'key': 'Voodoo Child (Slight Return)'}, 'type': 'insert', 'requestID': 'f5bf42be-0d24-474e-afca-50b31db34aea', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "You Can\'t Always Get What You Want", "replicaCount": 0, "value": " 100"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57052)
+I'm not responsible for id 53 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': "You Can't Always Get What You Want", 'value': ' 100'}, 'responseNodeIP': '192.168.1.3', 'requestID': '487d6131-bcf8-44c8-84ce-35e74216a956', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 487d6131-bcf8-44c8-84ce-35e74216a956
+Received '{"type": "insert", "requestID": "65aaf761-49a3-4bba-8ad7-0d41e92aa522", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 95", "replicaCount": 0, "key": "Blue Suede Shoes"}}' from ('192.168.1.5', 57060)
+I'm not responsible for id 34 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 95', 'key': 'Blue Suede Shoes'}, 'type': 'insert', 'requestID': '65aaf761-49a3-4bba-8ad7-0d41e92aa522', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "98e8ff57-1abd-4565-be3e-e7936b66a588", "responseNodeIP": "192.168.1.2", "insert": {"value": " 104", "replicaCount": 0, "key": "Living for the City"}, "type": "insert"}' from ('192.168.1.5', 57064)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 104', 'key': 'Living for the City'}, 'type': 'insert', 'requestID': '98e8ff57-1abd-4565-be3e-e7936b66a588', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "487d6131-bcf8-44c8-84ce-35e74216a956", "type": "response"}' from ('192.168.1.4', 36556)
+Received '{"type": "insert", "requestID": "78d29452-fa22-49b3-a5c2-6835ccdc45aa", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 106", "replicaCount": 0, "key": "Mr. Tambourine Man"}}' from ('192.168.1.5', 57080)
+I'm not responsible for id 24 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 106', 'key': 'Mr. Tambourine Man'}, 'type': 'insert', 'requestID': '78d29452-fa22-49b3-a5c2-6835ccdc45aa', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "You Send Me", "replicaCount": 0, "value": " 115"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57090)
+I'm not responsible for id 31 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'You Send Me', 'value': ' 115'}, 'responseNodeIP': '192.168.1.3', 'requestID': '6f42c97a-40d7-4587-95b2-e392b5ea985d', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 6f42c97a-40d7-4587-95b2-e392b5ea985d
+Received '{"responseNodePort": "42069", "insert": {"key": "Honky Tonk Women", "replicaCount": 0, "value": " 116"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57094)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Honky Tonk Women', 'value': ' 116'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'e16a4617-30ce-4efb-a4e1-ea017e2f51cb', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id e16a4617-30ce-4efb-a4e1-ea017e2f51cb
+Received '{"responseNodePort": "42069", "insert": {"key": "Go Your Own Way", "replicaCount": 0, "value": " 119"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57070)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Go Your Own Way', 'value': ' 119'}, 'responseNodeIP': '192.168.1.3', 'requestID': '9c988dce-077e-4ee5-b5a3-5451787770ee', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 9c988dce-077e-4ee5-b5a3-5451787770ee
+Received '{"type": "insert", "requestID": "614dae52-a882-4554-a4c4-943d80a1cc27", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 122", "replicaCount": 0, "key": "House of the Rising Sun"}}' from ('192.168.1.5', 57114)
+I'm not responsible for id 58 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 122', 'key': 'House of the Rising Sun'}, 'type': 'insert', 'requestID': '614dae52-a882-4554-a4c4-943d80a1cc27', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "1b32c78e-6f9e-4dda-99f7-d03ecdb46023", "responseNodeIP": "192.168.1.2", "insert": {"value": " 105", "replicaCount": 0, "key": "The Boxer"}, "type": "insert"}' from ('192.168.1.5', 57118)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 105', 'key': 'The Boxer'}, 'type': 'insert', 'requestID': '1b32c78e-6f9e-4dda-99f7-d03ecdb46023', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"requestID": "6f42c97a-40d7-4587-95b2-e392b5ea985d", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 53786)
+Received '{"response": "Finished adding all replicas\\n", "requestID": "e16a4617-30ce-4efb-a4e1-ea017e2f51cb", "type": "response"}' from ('192.168.1.1', 55168)
+Received '{"type": "insert", "requestID": "54ad5cc4-52e9-4c92-b650-71043847c7d4", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 118", "replicaCount": 0, "key": "Shout (Parts 1 and 2)]"}}' from ('192.168.1.5', 57122)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 118', 'key': 'Shout (Parts 1 and 2)]'}, 'type': 'insert', 'requestID': '54ad5cc4-52e9-4c92-b650-71043847c7d4', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "9c988dce-077e-4ee5-b5a3-5451787770ee", "type": "response"}' from ('192.168.1.1', 55176)
+Received '{"type": "insert", "requestID": "0d649e6c-72f4-4659-b6f5-80121178f450", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 120", "replicaCount": 0, "key": "I Want You Back"}}' from ('192.168.1.5', 57128)
+I'm responsible for insert with hash key 1 and value  120
+Received '{"type": "insert", "requestID": "c298be46-d692-4fd2-8c47-4b0e3f5ac3fa", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 107", "replicaCount": 0, "key": "Not Fade Away"}}' from ('192.168.1.5', 57136)
+I'm responsible for insert with hash key 62 and value  107
+Received '{"type": "insert", "requestID": "3dc56d3f-e4ba-4069-8d70-6407f1396427", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 110", "replicaCount": 0, "key": "I\'ve Been Loving You Too Long (to Stop Now)"}}' from ('192.168.1.5', 57144)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 110', 'key': "I've Been Loving You Too Long (to Stop Now)"}, 'type': 'insert', 'requestID': '3dc56d3f-e4ba-4069-8d70-6407f1396427', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "7d5fd566-4841-46d9-8e02-d6e6b6119766", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 108", "replicaCount": 0, "key": "Little Red Corvette"}}' from ('192.168.1.5', 57150)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 108', 'key': 'Little Red Corvette'}, 'type': 'insert', 'requestID': '7d5fd566-4841-46d9-8e02-d6e6b6119766', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "628bb0c7-6383-4809-9615-f87941268f9d", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 123", "replicaCount": 0, "key": "Will You Love Me Tomorrow"}}' from ('192.168.1.5', 57152)
+I'm not responsible for id 35 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 123', 'key': 'Will You Love Me Tomorrow'}, 'type': 'insert', 'requestID': '628bb0c7-6383-4809-9615-f87941268f9d', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "6d9bb8e6-d631-4d40-a28b-f907e4831c91", "responseNodeIP": "192.168.1.2", "insert": {"value": " 121", "replicaCount": 0, "key": "Stand By Me"}, "type": "insert"}' from ('192.168.1.5', 57156)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 121', 'key': 'Stand By Me'}, 'type': 'insert', 'requestID': '6d9bb8e6-d631-4d40-a28b-f907e4831c91', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "164df93b-1355-4574-a899-e3346e26b999", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 124", "replicaCount": 0, "key": "Shake"}}' from ('192.168.1.5', 57164)
+I'm not responsible for id 47 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 124', 'key': 'Shake'}, 'type': 'insert', 'requestID': '164df93b-1355-4574-a899-e3346e26b999', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "ef577630-2f3e-4c3d-8424-6210a302d92c", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 112", "replicaCount": 0, "key": "That\'s All Right"}}' from ('192.168.1.5', 57172)
+I'm responsible for insert with hash key 6 and value  112
+Received '{"type": "insert", "requestID": "3e37200b-eab4-4f69-9bcc-eeae8faed7fa", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 113", "replicaCount": 0, "key": "Up on the Roof"}}' from ('192.168.1.5', 57186)
+I'm not responsible for id 36 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 113', 'key': 'Up on the Roof'}, 'type': 'insert', 'requestID': '3e37200b-eab4-4f69-9bcc-eeae8faed7fa', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "f46de09b-f119-41b5-aacf-49f3cba34287", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 109", "replicaCount": 0, "key": "Brown Eyed Girl"}}' from ('192.168.1.5', 57202)
+I'm responsible for insert with hash key 4 and value  109
+Received '{"responseNodePort": "42069", "insert": {"key": "Purple Rain", "replicaCount": 0, "value": " 141"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57206)
+I'm not responsible for id 34 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Purple Rain', 'value': ' 141'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'daabc03d-e920-4540-8c70-563c28aa27a9', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id daabc03d-e920-4540-8c70-563c28aa27a9
+Received '{"responseNodePort": "42069", "insert": {"key": "Me and Bobby McGee", "replicaCount": 0, "value": " 146"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57216)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Me and Bobby McGee', 'value': ' 146'}, 'responseNodeIP': '192.168.1.3', 'requestID': '4fccca94-994a-4404-8156-6a3b328a5166', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 4fccca94-994a-4404-8156-6a3b328a5166
+Received '{"type": "insert", "requestID": "f41a3914-d723-4d11-828d-6e51b0d12a82", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 128", "replicaCount": 0, "key": "Maggie May"}}' from ('192.168.1.5', 57218)
+I'm not responsible for id 34 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 128', 'key': 'Maggie May'}, 'type': 'insert', 'requestID': 'f41a3914-d723-4d11-828d-6e51b0d12a82', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "daabc03d-e920-4540-8c70-563c28aa27a9", "type": "response"}' from ('192.168.1.4', 36650)
+Received '{"response": "Finished adding all replicas\\n", "requestID": "4fccca94-994a-4404-8156-6a3b328a5166", "type": "response"}' from ('192.168.1.1', 55250)
+Received '{"type": "insert", "requestID": "0c0b9e9f-e464-41f5-8ecc-8c259976fe56", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 136", "replicaCount": 0, "key": "Family Affair"}}' from ('192.168.1.5', 57232)
+I'm not responsible for id 35 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 136', 'key': 'Family Affair'}, 'type': 'insert', 'requestID': '0c0b9e9f-e464-41f5-8ecc-8c259976fe56', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "8631b1f5-c225-458c-b8bd-cad36e862e9d", "responseNodePort": "50100", "responseNodeIP": "192.168.1.5", "insert": {"value": " 129", "replicaCount": 0, "key": "With or Without You"}}' from ('192.168.1.5', 57240)
+I'm responsible for insert with hash key 2 and value  129
+Received '{"type": "insert", "requestID": "10c94204-9a97-4ae5-8f83-d5cab96a6b63", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 138", "replicaCount": 0, "key": "Kashmir"}}' from ('192.168.1.5', 57242)
+I'm not responsible for id 52 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 138', 'key': 'Kashmir'}, 'type': 'insert', 'requestID': '10c94204-9a97-4ae5-8f83-d5cab96a6b63', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "843c711b-f041-480b-9d30-266b466cb6ca", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 139", "replicaCount": 0, "key": "All I Have to Do Is Dream"}}' from ('192.168.1.5', 57244)
+I'm responsible for insert with hash key 1 and value  139
+Received '{"type": "insert", "requestID": "ceeac8db-930a-43be-a017-5f20278a5cc6", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 133", "replicaCount": 0, "key": "While My Guitar Gently Weeps"}}' from ('192.168.1.5', 57260)
+I'm not responsible for id 49 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 133', 'key': 'While My Guitar Gently Weeps'}, 'type': 'insert', 'requestID': 'ceeac8db-930a-43be-a017-5f20278a5cc6', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "1bea8e02-e58b-4605-b781-674c1acc70d4", "responseNodeIP": "192.168.1.2", "insert": {"value": " 148", "replicaCount": 0, "key": "Eight Miles High"}, "type": "insert"}' from ('192.168.1.5', 57264)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 148', 'key': 'Eight Miles High'}, 'type': 'insert', 'requestID': '1bea8e02-e58b-4605-b781-674c1acc70d4', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Let\'s Get It On", "replicaCount": 0, "value": " 165"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57280)
+I'm not responsible for id 19 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': "Let's Get It On", 'value': ' 165'}, 'responseNodeIP': '192.168.1.3', 'requestID': '08759934-3cde-4fcd-813a-4cb6826d8cdc', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 08759934-3cde-4fcd-813a-4cb6826d8cdc
+Received '{"responseNodePort": "42069", "insert": {"key": "I\'m Waiting for the Man", "replicaCount": 0, "value": " 157"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57278)
+I'm not responsible for id 11 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': "I'm Waiting for the Man", 'value': ' 157'}, 'responseNodeIP': '192.168.1.3', 'requestID': '58cbb539-15d4-4ded-a546-111275174182', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 58cbb539-15d4-4ded-a546-111275174182
+Received '{"responseNodePort": "42069", "insert": {"key": "September Gurls", "replicaCount": 0, "value": " 176"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57314)
+I'm not responsible for id 48 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'September Gurls', 'value': ' 176'}, 'responseNodeIP': '192.168.1.3', 'requestID': '1b77a357-3451-4333-99f9-b1cbf999c377', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 1b77a357-3451-4333-99f9-b1cbf999c377
+Received '{"responseNodePort": "42069", "insert": {"key": "God Save the Queen", "replicaCount": 0, "value": " 171"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57302)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'God Save the Queen', 'value': ' 171'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'd187e522-87d0-458a-971c-62bdb2f548a3', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id d187e522-87d0-458a-971c-62bdb2f548a3
+Received '{"type": "insert", "requestID": "03317f09-a889-4b6f-a282-027354d5ae92", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 151", "replicaCount": 0, "key": "A Hard Day\'s Night"}}' from ('192.168.1.5', 57316)
+I'm responsible for insert with hash key 3 and value  151
+Received '{"response": "Finished adding all replicas\\n", "requestID": "08759934-3cde-4fcd-813a-4cb6826d8cdc", "type": "response"}' from ('192.168.1.2', 60010)
+Received '{"type": "insert", "requestID": "9a1719b4-da83-40db-a85a-e378c4c78f3d", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 145", "replicaCount": 0, "key": "Lust for Life"}}' from ('192.168.1.5', 57322)
+I'm not responsible for id 39 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 145', 'key': 'Lust for Life'}, 'type': 'insert', 'requestID': '9a1719b4-da83-40db-a85a-e378c4c78f3d', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "1b77a357-3451-4333-99f9-b1cbf999c377", "type": "response"}' from ('192.168.1.4', 36716)
+Received '{"type": "insert", "requestID": "dfde203f-069c-46c0-ac29-8cb6ae3a7aa2", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 152", "replicaCount": 0, "key": "Rave On"}}' from ('192.168.1.5', 57330)
+I'm not responsible for id 51 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 152', 'key': 'Rave On'}, 'type': 'insert', 'requestID': 'dfde203f-069c-46c0-ac29-8cb6ae3a7aa2', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "d187e522-87d0-458a-971c-62bdb2f548a3", "type": "response"}' from ('192.168.1.1', 55314)
+Received '{"type": "insert", "requestID": "4769ac94-91d0-40fa-a3c7-d2e56df5dcd2", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 150", "replicaCount": 0, "key": "Foxey Lady"}}' from ('192.168.1.5', 57346)
+I'm not responsible for id 53 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 150', 'key': 'Foxey Lady'}, 'type': 'insert', 'requestID': '4769ac94-91d0-40fa-a3c7-d2e56df5dcd2', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "e11b9401-9cf2-42ce-91ec-6d91a6587a43", "responseNodeIP": "192.168.1.2", "insert": {"value": " 161", "replicaCount": 0, "key": "Bohemian Rhapsody"}, "type": "insert"}' from ('192.168.1.5', 57354)
+I'm not responsible for id 49 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 161', 'key': 'Bohemian Rhapsody'}, 'type': 'insert', 'requestID': 'e11b9401-9cf2-42ce-91ec-6d91a6587a43', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "674997e7-d94a-4536-9141-49b444378a71", "responseNodeIP": "192.168.1.2", "insert": {"value": " 160", "replicaCount": 0, "key": "Nothing Compares 2 U"}, "type": "insert"}' from ('192.168.1.5', 57358)
+I'm not responsible for id 48 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 160', 'key': 'Nothing Compares 2 U'}, 'type': 'insert', 'requestID': '674997e7-d94a-4536-9141-49b444378a71', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "fdfd8ac7-bacf-401f-a260-ab486e6605ea", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 154", "replicaCount": 0, "key": "The Sounds of Silence"}}' from ('192.168.1.5', 57370)
+I'm not responsible for id 54 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 154', 'key': 'The Sounds of Silence'}, 'type': 'insert', 'requestID': 'fdfd8ac7-bacf-401f-a260-ab486e6605ea', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "21cc733f-9101-4fb3-9f22-34c2a65aa4d7", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 162", "replicaCount": 0, "key": "Folsom Prison Blues"}}' from ('192.168.1.5', 57392)
+I'm responsible for insert with hash key 2 and value  162
+Received '{"responseNodePort": "42069", "insert": {"key": "There Goes My Baby", "replicaCount": 0, "value": " 191"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57376)
+I'm not responsible for id 16 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'There Goes My Baby', 'value': ' 191'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'adb8185c-e71e-4895-bd1a-e42031cd4737', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id adb8185c-e71e-4895-bd1a-e42031cd4737
+Received '{"type": "insert", "requestID": "97c187bf-07c3-477c-a67a-56776b20864f", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 164", "replicaCount": 0, "key": "Lose Yourself "}}' from ('192.168.1.5', 57396)
+I'm not responsible for id 59 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 164', 'key': 'Lose Yourself '}, 'type': 'insert', 'requestID': '97c187bf-07c3-477c-a67a-56776b20864f', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Knocking on Heaven\'s Door", "replicaCount": 0, "value": " 188"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57406)
+I'm not responsible for id 58 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': "Knocking on Heaven's Door", 'value': ' 188'}, 'responseNodeIP': '192.168.1.3', 'requestID': '9faaa27c-7bc9-4268-a606-6d85cc57dd2e', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 9faaa27c-7bc9-4268-a606-6d85cc57dd2e
+Received '{"responseNodePort": "42069", "requestID": "afe6201d-30a4-4936-83e0-7aefdacf3c15", "responseNodeIP": "192.168.1.2", "insert": {"value": " 168", "replicaCount": 0, "key": "Both Sides Now"}, "type": "insert"}' from ('192.168.1.5', 57418)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 168', 'key': 'Both Sides Now'}, 'type': 'insert', 'requestID': 'afe6201d-30a4-4936-83e0-7aefdacf3c15', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "type": "response", "requestID": "9faaa27c-7bc9-4268-a606-6d85cc57dd2e"}' from ('192.168.1.1', 55356)
+Received '{"type": "insert", "requestID": "7fb89e17-1b47-4baa-bca4-9ded52f763ab", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 156", "replicaCount": 0, "key": "(We\'re Gonna) Rock Around the Clock"}}' from ('192.168.1.5', 57424)
+I'm not responsible for id 52 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 156', 'key': "(We're Gonna) Rock Around the Clock"}, 'type': 'insert', 'requestID': '7fb89e17-1b47-4baa-bca4-9ded52f763ab', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "adb8185c-e71e-4895-bd1a-e42031cd4737", "type": "response"}' from ('192.168.1.2', 60092)
+Received '{"type": "insert", "requestID": "87c5615f-04d2-4d98-b76b-747c598bdfbf", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 172", "replicaCount": 0, "key": "Paint It"}}' from ('192.168.1.5', 57432)
+I'm responsible for insert with hash key 1 and value  172
+Received '{"type": "response", "requestID": "58cbb539-15d4-4ded-a546-111275174182", "response": "Finished adding all replicas\\n"}' from ('192.168.1.5', 57436)
+Received '{"responseNodePort": "42069", "requestID": "952de2c2-24d2-4066-bc6f-0a56d39c70f6", "responseNodeIP": "192.168.1.2", "insert": {"value": " 178", "replicaCount": 0, "key": "Hey Ya!"}, "type": "insert"}' from ('192.168.1.5', 57446)
+I'm not responsible for id 49 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 178', 'key': 'Hey Ya!'}, 'type': 'insert', 'requestID': '952de2c2-24d2-4066-bc6f-0a56d39c70f6', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "a374d450-e5ea-4cb7-870c-03f007f63108", "responseNodeIP": "192.168.1.2", "insert": {"value": " 182", "replicaCount": 0, "key": "Please Please Me"}, "type": "insert"}' from ('192.168.1.5', 57458)
+I'm not responsible for id 58 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 182', 'key': 'Please Please Me'}, 'type': 'insert', 'requestID': 'a374d450-e5ea-4cb7-870c-03f007f63108', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "a7d05b1f-39b6-49b8-8d0f-8d3f5e63fbd7", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 180", "replicaCount": 0, "key": "Save the Last Dance for Me"}}' from ('192.168.1.5', 57470)
+I'm not responsible for id 54 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 180', 'key': 'Save the Last Dance for Me'}, 'type': 'insert', 'requestID': 'a7d05b1f-39b6-49b8-8d0f-8d3f5e63fbd7', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "b5d983ae-f2ff-4894-a398-fe21ab1f3f52", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 184", "replicaCount": 0, "key": "I Never Loved a Man (The Way I Love You)"}}' from ('192.168.1.5', 57478)
+I'm not responsible for id 54 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 184', 'key': 'I Never Loved a Man (The Way I Love You)'}, 'type': 'insert', 'requestID': 'b5d983ae-f2ff-4894-a398-fe21ab1f3f52', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "b734c6d2-0be4-4ea5-b2b0-56393b68f105", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 181", "replicaCount": 0, "key": "The Thrill Is Gone"}}' from ('192.168.1.5', 57484)
+I'm responsible for insert with hash key 0 and value  181
+Received '{"type": "insert", "requestID": "64222f58-f96d-4f07-b9ef-4e1f7980671e", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 193", "replicaCount": 0, "key": "Maybe"}}' from ('192.168.1.5', 57500)
+I'm responsible for insert with hash key 4 and value  193
+Received '{"type": "insert", "requestID": "cd453019-37a5-4414-9ae4-6b81dd6c5ff9", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 195", "replicaCount": 0, "key": "Don\'t Be Cruel"}}' from ('192.168.1.5', 57516)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 195', 'key': "Don't Be Cruel"}, 'type': 'insert', 'requestID': 'cd453019-37a5-4414-9ae4-6b81dd6c5ff9', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Walk on the Wild Side", "replicaCount": 0, "value": " 219"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57504)
+I'm not responsible for id 53 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Walk on the Wild Side', 'value': ' 219'}, 'responseNodeIP': '192.168.1.3', 'requestID': '77867911-3916-4def-9a5d-105c7edf0c80', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 77867911-3916-4def-9a5d-105c7edf0c80
+Received '{"responseNodePort": "42069", "insert": {"key": "Boom Boom", "replicaCount": 0, "value": " 216"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57506)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Boom Boom', 'value': ' 216'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'eafb2df6-2eeb-4c12-8cc0-e823b8393693', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id eafb2df6-2eeb-4c12-8cc0-e823b8393693
+Received '{"requestID": "eafb2df6-2eeb-4c12-8cc0-e823b8393693", "type": "response", "response": "Finished adding all replicas\\n"}' from ('192.168.1.5', 57522)
+Received '{"type": "insert", "requestID": "7a632ca0-4b11-4aa2-a879-a00f55758e97", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 194", "replicaCount": 0, "key": "Sweet Child O\' Mine"}}' from ('192.168.1.5', 57524)
+I'm responsible for insert with hash key 2 and value  194
+Received '{"response": "Finished adding all replicas\\n", "requestID": "77867911-3916-4def-9a5d-105c7edf0c80", "type": "response"}' from ('192.168.1.4', 36838)
+Received '{"type": "insert", "requestID": "da57ba1f-c32f-4bce-89b4-b3f05f857bef", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 196", "replicaCount": 0, "key": "Hey Joe"}}' from ('192.168.1.5', 57526)
+I'm responsible for insert with hash key 2 and value  196
+Received '{"responseNodePort": "42069", "requestID": "253c2273-f22e-44ad-94e1-b3b50ef48279", "responseNodeIP": "192.168.1.2", "insert": {"value": " 199", "replicaCount": 0, "key": "Bizarre Love Triangle"}, "type": "insert"}' from ('192.168.1.5', 57546)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 199', 'key': 'Bizarre Love Triangle'}, 'type': 'insert', 'requestID': '253c2273-f22e-44ad-94e1-b3b50ef48279', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "0c167d1b-f585-4173-87f4-2eb344799240", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 201", "replicaCount": 0, "key": "Positively 4th Street"}}' from ('192.168.1.5', 57548)
+I'm responsible for insert with hash key 62 and value  201
+Received '{"type": "insert", "requestID": "79584995-69b6-417d-9215-60b36b61bef5", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 198", "replicaCount": 0, "key": "Loser"}}' from ('192.168.1.5', 57554)
+I'm not responsible for id 46 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 198', 'key': 'Loser'}, 'type': 'insert', 'requestID': '79584995-69b6-417d-9215-60b36b61bef5', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "4d888cbe-28ff-4476-ac06-465c672b0e87", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 197", "replicaCount": 0, "key": "Flash Light"}}' from ('192.168.1.5', 57558)
+I'm responsible for insert with hash key 4 and value  197
+Received '{"responseNodePort": "42069", "insert": {"key": "Highway to Hell", "replicaCount": 0, "value": " 252"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57552)
+I'm not responsible for id 18 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Highway to Hell', 'value': ' 252'}, 'responseNodeIP': '192.168.1.3', 'requestID': '5ad17d0b-25e1-4f78-9503-f3a6713c559e', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 5ad17d0b-25e1-4f78-9503-f3a6713c559e
+Received '{"response": "Finished adding all replicas\\n", "requestID": "5ad17d0b-25e1-4f78-9503-f3a6713c559e", "type": "response"}' from ('192.168.1.2', 60170)
+Received '{"responseNodePort": "42069", "insert": {"key": "I Can See for Miles", "replicaCount": 0, "value": " 256"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57586)
+I'm not responsible for id 52 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'I Can See for Miles', 'value': ' 256'}, 'responseNodeIP': '192.168.1.3', 'requestID': '1007ee6d-db4f-4a0e-a869-37d24e2d0c26', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 1007ee6d-db4f-4a0e-a869-37d24e2d0c26
+Received '{"type": "insert", "requestID": "9a08fb10-03d5-43b1-9430-1fd533e3482a", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 202", "replicaCount": 0, "key": "Try a Little Tenderness"}}' from ('192.168.1.5', 57572)
+I'm responsible for insert with hash key 4 and value  202
+Received '{"responseNodePort": "42069", "insert": {"key": "Hallelujah", "replicaCount": 0, "value": " 257"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57596)
+I'm responsible for insert with hash key 1 and value  257
+Received '{"responseNodePort": "42069", "insert": {"key": "Hot Fun in the Summertime", "replicaCount": 0, "value": " 245"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57588)
+I'm not responsible for id 7 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Hot Fun in the Summertime', 'value': ' 245'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'a4bb2f37-1e35-4956-82f0-605be43f1ae5', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id a4bb2f37-1e35-4956-82f0-605be43f1ae5
+Received '{"responseNodePort": "42069", "insert": {"key": "Gimme Some Lovin\'", "replicaCount": 0, "value": " 242"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57576)
+I'm responsible for insert with hash key 5 and value  242
+Received '{"type": "insert", "requestID": "55b18c7b-4086-4f58-81cb-839e9b098109", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 189", "replicaCount": 0, "key": "Free Bird"}}' from ('192.168.1.5', 57600)
+I'm responsible for insert with hash key 0 and value  189
+Received '{"responseNodePort": "42069", "insert": {"key": "The Night They Drove Old Dixie Down", "replicaCount": 0, "value": " 243"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57580)
+I'm not responsible for id 58 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'The Night They Drove Old Dixie Down', 'value': ' 243'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'df6b369e-7ecf-43ce-a806-92452cf1076d', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id df6b369e-7ecf-43ce-a806-92452cf1076d
+Received '{"responseNodePort": "42069", "insert": {"key": "Paranoid", "replicaCount": 0, "value": " 248"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57604)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Paranoid', 'value': ' 248'}, 'responseNodeIP': '192.168.1.3', 'requestID': '2791ebdc-5521-4afc-a50b-16480b503d02', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 2791ebdc-5521-4afc-a50b-16480b503d02
+Received '{"type": "insert", "requestID": "5dbe5aa1-e12c-4c93-883a-c61cc30bf949", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 205", "replicaCount": 0, "key": "Bye Bye Love"}}' from ('192.168.1.5', 57606)
+I'm not responsible for id 24 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 205', 'key': 'Bye Bye Love'}, 'type': 'insert', 'requestID': '5dbe5aa1-e12c-4c93-883a-c61cc30bf949', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "1dc4ceb6-b7c0-47c2-bd4c-d3c83ccc8ad2", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 204", "replicaCount": 0, "key": "Reach Out"}}' from ('192.168.1.5', 57610)
+I'm not responsible for id 58 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 204', 'key': 'Reach Out'}, 'type': 'insert', 'requestID': '1dc4ceb6-b7c0-47c2-bd4c-d3c83ccc8ad2', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "1007ee6d-db4f-4a0e-a869-37d24e2d0c26", "type": "response"}' from ('192.168.1.4', 36874)
+Received '{"response": "Finished adding all replicas\\n", "type": "response", "requestID": "df6b369e-7ecf-43ce-a806-92452cf1076d"}' from ('192.168.1.1', 55438)
+Received '{"requestID": "2791ebdc-5521-4afc-a50b-16480b503d02", "type": "response", "response": "Finished adding all replicas\\n"}' from ('192.168.1.5', 57616)
+Received '{"type": "insert", "requestID": "0ce63c95-1939-49d8-a51b-4551812b6aa9", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 207", "replicaCount": 0, "key": "In My Room"}}' from ('192.168.1.5', 57620)
+I'm not responsible for id 45 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 207', 'key': 'In My Room'}, 'type': 'insert', 'requestID': '0ce63c95-1939-49d8-a51b-4551812b6aa9', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "cba04e5b-681a-4504-96e9-ff1435f7e0cb", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 210", "replicaCount": 0, "key": "1999"}}' from ('192.168.1.5', 57626)
+I'm not responsible for id 56 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 210', 'key': '1999'}, 'type': 'insert', 'requestID': 'cba04e5b-681a-4504-96e9-ff1435f7e0cb', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "9abf0f9f-8bd1-4779-a9cf-e62008a457a9", "responseNodeIP": "192.168.1.2", "insert": {"value": " 212", "replicaCount": 0, "key": "Rockin\' in the Free World"}, "type": "insert"}' from ('192.168.1.5', 57630)
+I'm responsible for insert with hash key 2 and value  212
+Received '{"responseNodePort": "42069", "requestID": "7c98a199-a6e2-4712-902d-34328d7cb5aa", "responseNodeIP": "192.168.1.2", "insert": {"value": " 215", "replicaCount": 0, "key": "Jolene"}, "type": "insert"}' from ('192.168.1.5', 57638)
+I'm responsible for insert with hash key 63 and value  215
+Received '{"type": "insert", "requestID": "758d9271-af53-4b8b-bd12-be8c1159efa6", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 222", "replicaCount": 0, "key": "Good Times"}}' from ('192.168.1.5', 57644)
+I'm responsible for insert with hash key 2 and value  222
+Received '{"responseNodePort": "42069", "requestID": "3fbc3b33-35b3-444d-85dd-287c7434d7fa", "responseNodeIP": "192.168.1.2", "insert": {"value": " 227", "replicaCount": 0, "key": "Mannish Boy"}, "type": "insert"}' from ('192.168.1.5', 57650)
+I'm not responsible for id 54 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 227', 'key': 'Mannish Boy'}, 'type': 'insert', 'requestID': '3fbc3b33-35b3-444d-85dd-287c7434d7fa', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "0532d8df-aa99-4850-b23d-83cd775f0473", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 217", "replicaCount": 0, "key": "Spoonful"}}' from ('192.168.1.5', 57654)
+I'm not responsible for id 25 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 217', 'key': 'Spoonful'}, 'type': 'insert', 'requestID': '0532d8df-aa99-4850-b23d-83cd775f0473', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "9933e328-1776-40d3-8a78-9fdcad657f35", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 231", "replicaCount": 0, "key": "We Gotta Get Out of This Place"}}' from ('192.168.1.5', 57672)
+I'm not responsible for id 19 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 231', 'key': 'We Gotta Get Out of This Place'}, 'type': 'insert', 'requestID': '9933e328-1776-40d3-8a78-9fdcad657f35', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "af0b9dd6-f1fd-43c4-aa65-946e11ad17ed", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 235", "replicaCount": 0, "key": "Planet Rock"}}' from ('192.168.1.5', 57682)
+I'm not responsible for id 43 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 235', 'key': 'Planet Rock'}, 'type': 'insert', 'requestID': 'af0b9dd6-f1fd-43c4-aa65-946e11ad17ed', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Attractions", "replicaCount": 0, "value": " 283"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57686)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Attractions', 'value': ' 283'}, 'responseNodeIP': '192.168.1.3', 'requestID': '9ef23955-42be-4fe6-86d8-4789e067b1a1', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 9ef23955-42be-4fe6-86d8-4789e067b1a1
+Received '{"responseNodePort": "42069", "insert": {"key": "(What\'s So Funny \'Bout) Peace Love and Understanding?", "replicaCount": 0, "value": " 282"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57678)
+I'm responsible for insert with hash key 63 and value  282
+Received '{"type": "insert", "requestID": "af503638-6a65-496a-aa18-9acf6b3bdfdc", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 237", "replicaCount": 0, "key": "The Wanderer"}}' from ('192.168.1.5', 57708)
+I'm not responsible for id 52 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 237', 'key': 'The Wanderer'}, 'type': 'insert', 'requestID': 'af503638-6a65-496a-aa18-9acf6b3bdfdc', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "9ef23955-42be-4fe6-86d8-4789e067b1a1", "type": "response"}' from ('192.168.1.1', 55498)
+Received '{"type": "insert", "requestID": "ab51afa7-89b3-4950-8c5e-913c34bc14ae", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 249", "replicaCount": 0, "key": "Mack the Knife"}}' from ('192.168.1.5', 57716)
+I'm not responsible for id 47 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 249', 'key': 'Mack the Knife'}, 'type': 'insert', 'requestID': 'ab51afa7-89b3-4950-8c5e-913c34bc14ae', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "f4268d8e-b948-4b97-8eae-b9ef74768d4a", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 236", "replicaCount": 0, "key": "I Fall to Pieces"}}' from ('192.168.1.5', 57722)
+I'm not responsible for id 51 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 236', 'key': 'I Fall to Pieces'}, 'type': 'insert', 'requestID': 'f4268d8e-b948-4b97-8eae-b9ef74768d4a', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "f33b2521-b310-4df8-a6d7-3b202194823d", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 238", "replicaCount": 0, "key": "Son of a Preacher Man"}}' from ('192.168.1.5', 57728)
+I'm responsible for insert with hash key 0 and value  238
+Received '{"type": "insert", "requestID": "b78029b8-3a99-43e4-8253-14a08c736ece", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 255", "replicaCount": 0, "key": "Wild Thing"}}' from ('192.168.1.5', 57732)
+I'm not responsible for id 44 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 255', 'key': 'Wild Thing'}, 'type': 'insert', 'requestID': 'b78029b8-3a99-43e4-8253-14a08c736ece', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "That\'s Entertainment", "replicaCount": 0, "value": " 305"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57752)
+I'm not responsible for id 33 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': "That's Entertainment", 'value': ' 305'}, 'responseNodeIP': '192.168.1.3', 'requestID': '7b28457c-e081-4b75-9fab-1ee60229f14f', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 7b28457c-e081-4b75-9fab-1ee60229f14f
+Received '{"type": "insert", "requestID": "db05f759-27c2-451f-9a7a-a72d2051ab92", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 263", "replicaCount": 0, "key": "Tighten Up"}}' from ('192.168.1.5', 57778)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 263', 'key': 'Tighten Up'}, 'type': 'insert', 'requestID': 'db05f759-27c2-451f-9a7a-a72d2051ab92', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "a4b05485-e287-465f-b99a-7035fde30050", "responseNodeIP": "192.168.1.2", "insert": {"value": " 247", "replicaCount": 0, "key": "Chain of Fools"}, "type": "insert"}' from ('192.168.1.5', 57786)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 247', 'key': 'Chain of Fools'}, 'type': 'insert', 'requestID': 'a4b05485-e287-465f-b99a-7035fde30050', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "249428ad-16a4-4d80-a2c3-fee023f0080f", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 246", "replicaCount": 0, "key": "Rappers Delight"}}' from ('192.168.1.5', 57790)
+I'm not responsible for id 52 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 246', 'key': 'Rappers Delight'}, 'type': 'insert', 'requestID': '249428ad-16a4-4d80-a2c3-fee023f0080f', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"requestID": "7b28457c-e081-4b75-9fab-1ee60229f14f", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54156)
+Received '{"type": "response", "requestID": "a4bb2f37-1e35-4956-82f0-605be43f1ae5", "response": "Finished adding all replicas\\n"}' from ('192.168.1.5', 57794)
+Received '{"responseNodePort": "42069", "insert": {"key": "In Dreams", "replicaCount": 0, "value": " 311"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57804)
+I'm not responsible for id 39 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'In Dreams', 'value': ' 311'}, 'responseNodeIP': '192.168.1.3', 'requestID': '07a506ff-1ccd-48de-a3ca-38fe2651372a', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 07a506ff-1ccd-48de-a3ca-38fe2651372a
+Received '{"responseNodePort": "42069", "requestID": "7b4c8e42-8efd-468e-9b8a-134186771a1a", "responseNodeIP": "192.168.1.2", "insert": {"value": " 261", "replicaCount": 0, "key": "He\'s a Rebel"}, "type": "insert"}' from ('192.168.1.5', 57806)
+I'm responsible for insert with hash key 63 and value  261
+Received '{"response": "Finished adding all replicas\\n", "requestID": "07a506ff-1ccd-48de-a3ca-38fe2651372a", "type": "response"}' from ('192.168.1.1', 55566)
+Received '{"responseNodePort": "42069", "insert": {"key": "Fight the Power", "replicaCount": 0, "value": " 321"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57820)
+I'm not responsible for id 11 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Fight the Power', 'value': ' 321'}, 'responseNodeIP': '192.168.1.3', 'requestID': '634308b5-1bbf-4f2b-9f67-b78f2eab2753', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 634308b5-1bbf-4f2b-9f67-b78f2eab2753
+Received '{"type": "insert", "requestID": "27e95d1f-b986-42e0-8a91-1b856a040bdb", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 266", "replicaCount": 0, "key": "Sunday Bloody Sunday"}}' from ('192.168.1.5', 57822)
+I'm not responsible for id 17 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 266', 'key': 'Sunday Bloody Sunday'}, 'type': 'insert', 'requestID': '27e95d1f-b986-42e0-8a91-1b856a040bdb', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "For Your Precious Love", "replicaCount": 0, "value": " 326"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57838)
+I'm not responsible for id 13 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'For Your Precious Love', 'value': ' 326'}, 'responseNodeIP': '192.168.1.3', 'requestID': '5c798f3c-8734-4822-9d0e-17c5db005817', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 5c798f3c-8734-4822-9d0e-17c5db005817
+Received '{"type": "insert", "requestID": "0c0a8cd7-927f-41e6-8ab8-fe494933eda1", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 262", "replicaCount": 0, "key": "Sail Away"}}' from ('192.168.1.5', 57848)
+I'm responsible for insert with hash key 2 and value  262
+Received '{"type": "insert", "requestID": "ce418844-6799-4923-ad7b-0c2e11bdf67f", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 274", "replicaCount": 0, "key": "I\'ll Take You There"}}' from ('192.168.1.5', 57860)
+I'm not responsible for id 48 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 274', 'key': "I'll Take You There"}, 'type': 'insert', 'requestID': 'ce418844-6799-4923-ad7b-0c2e11bdf67f', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "b3ca04fb-9770-4bc3-be4e-e53ea55ca0c8", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 271", "replicaCount": 0, "key": "Something"}}' from ('192.168.1.5', 57866)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 271', 'key': 'Something'}, 'type': 'insert', 'requestID': 'b3ca04fb-9770-4bc3-be4e-e53ea55ca0c8', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "48713d41-0d1a-4436-a125-0c233010c37a", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 267", "replicaCount": 0, "key": "Roadrunner"}}' from ('192.168.1.5', 57870)
+I'm not responsible for id 50 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 267', 'key': 'Roadrunner'}, 'type': 'insert', 'requestID': '48713d41-0d1a-4436-a125-0c233010c37a', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "5c798f3c-8734-4822-9d0e-17c5db005817", "type": "response"}' from ('192.168.1.2', 60354)
+Received '{"type": "insert", "requestID": "ab48a289-f627-4a2d-93f1-c0bdb8a73d9d", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 272", "replicaCount": 0, "key": "Somebody to Love"}}' from ('192.168.1.5', 57874)
+I'm not responsible for id 50 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 272', 'key': 'Somebody to Love'}, 'type': 'insert', 'requestID': 'ab48a289-f627-4a2d-93f1-c0bdb8a73d9d', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "aeb916df-f7bc-47ba-9f4c-53fb605865dd", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 279", "replicaCount": 0, "key": "You Are the Sunshine of My Life"}}' from ('192.168.1.5', 57882)
+I'm responsible for insert with hash key 1 and value  279
+Received '{"type": "insert", "requestID": "e37b7c66-1aa1-45c7-92b2-7a81f8a65ab0", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 268", "replicaCount": 0, "key": "He Stopped Loving Her Today"}}' from ('192.168.1.5', 57888)
+I'm not responsible for id 53 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 268', 'key': 'He Stopped Loving Her Today'}, 'type': 'insert', 'requestID': 'e37b7c66-1aa1-45c7-92b2-7a81f8a65ab0', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Maybe I\'m Amazed", "replicaCount": 0, "value": " 337"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57900)
+I'm not responsible for id 31 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': "Maybe I'm Amazed", 'value': ' 337'}, 'responseNodeIP': '192.168.1.3', 'requestID': '9b04b772-50b8-4183-a045-6863cc4421b2', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 9b04b772-50b8-4183-a045-6863cc4421b2
+Received '{"responseNodePort": "42069", "insert": {"key": "You Keep Me Hanging On", "replicaCount": 0, "value": " 338"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57898)
+I'm not responsible for id 32 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'You Keep Me Hanging On', 'value': ' 338'}, 'responseNodeIP': '192.168.1.3', 'requestID': '112eda65-46c6-4be1-81a5-ea3f8a3ff4e4', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 112eda65-46c6-4be1-81a5-ea3f8a3ff4e4
+Received '{"responseNodePort": "42069", "requestID": "699df130-baa3-47b1-a772-4613b0b8ed1f", "responseNodeIP": "192.168.1.2", "insert": {"value": " 280", "replicaCount": 0, "key": "Help Me"}, "type": "insert"}' from ('192.168.1.5', 57902)
+I'm not responsible for id 36 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 280', 'key': 'Help Me'}, 'type': 'insert', 'requestID': '699df130-baa3-47b1-a772-4613b0b8ed1f', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Piece of My Heart", "replicaCount": 0, "value": " 343"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 57908)
+I'm responsible for insert with hash key 62 and value  343
+Received '{"requestID": "9b04b772-50b8-4183-a045-6863cc4421b2", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54238)
+Received '{"requestID": "112eda65-46c6-4be1-81a5-ea3f8a3ff4e4", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54240)
+Received '{"type": "insert", "requestID": "e2955a5d-0670-486e-880f-e5322820fa15", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 284", "replicaCount": 0, "key": "Smoke Stack Lightning"}}' from ('192.168.1.5', 57924)
+I'm responsible for insert with hash key 63 and value  284
+Received '{"responseNodePort": "42069", "requestID": "a30f604d-5c20-440d-9d73-45354b6491da", "responseNodeIP": "192.168.1.2", "insert": {"value": " 285", "replicaCount": 0, "key": "Summer Babe"}, "type": "insert"}' from ('192.168.1.5', 57936)
+I'm not responsible for id 26 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 285', 'key': 'Summer Babe'}, 'type': 'insert', 'requestID': 'a30f604d-5c20-440d-9d73-45354b6491da', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "cee5def6-99b2-46d1-8e12-5c6c53cbc691", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 281", "replicaCount": 0, "key": "Call Me"}}' from ('192.168.1.5', 57946)
+I'm responsible for insert with hash key 3 and value  281
+Received '{"type": "insert", "requestID": "16371502-196b-4e9b-8858-521b8e5cfdd2", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 286", "replicaCount": 0, "key": "Walk This Way"}}' from ('192.168.1.5', 57950)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 286', 'key': 'Walk This Way'}, 'type': 'insert', 'requestID': '16371502-196b-4e9b-8858-521b8e5cfdd2', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "07cc578a-25e1-4480-b312-2ecb72e017f9", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 293", "replicaCount": 0, "key": "Black Dog"}}' from ('192.168.1.5', 57980)
+I'm not responsible for id 22 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 293', 'key': 'Black Dog'}, 'type': 'insert', 'requestID': '07cc578a-25e1-4480-b312-2ecb72e017f9', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "d51dbb0a-df0e-45e4-a531-1aa4fa6d4f03", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 290", "replicaCount": 0, "key": "She\'s Not There"}}' from ('192.168.1.5', 57996)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 290', 'key': "She's Not There"}, 'type': 'insert', 'requestID': 'd51dbb0a-df0e-45e4-a531-1aa4fa6d4f03', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "d7ef4dc9-094b-4699-af15-a8f3deb342ca", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 291", "replicaCount": 0, "key": "Train in Vain"}}' from ('192.168.1.5', 58000)
+I'm not responsible for id 13 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 291', 'key': 'Train in Vain'}, 'type': 'insert', 'requestID': 'd7ef4dc9-094b-4699-af15-a8f3deb342ca', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "ca364fce-a7a9-4915-b87e-299843b0194c", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 303", "replicaCount": 0, "key": "With a Little Help From My Friends"}}' from ('192.168.1.5', 58004)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 303', 'key': 'With a Little Help From My Friends'}, 'type': 'insert', 'requestID': 'ca364fce-a7a9-4915-b87e-299843b0194c', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "37e55cae-b214-402a-83b5-1602b4f0a9e6", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 288", "replicaCount": 0, "key": "Can\'t Buy Me Love"}}' from ('192.168.1.5', 58008)
+I'm not responsible for id 41 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 288', 'key': "Can't Buy Me Love"}, 'type': 'insert', 'requestID': '37e55cae-b214-402a-83b5-1602b4f0a9e6', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Marquee Moon", "replicaCount": 0, "value": " 371"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58012)
+I'm responsible for insert with hash key 3 and value  371
+Received '{"type": "insert", "requestID": "ae0ac8d8-585e-4037-9afd-8f0e727a0b7c", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 289", "replicaCount": 0, "key": "Stan"}}' from ('192.168.1.5', 58014)
+I'm not responsible for id 42 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 289', 'key': 'Stan'}, 'type': 'insert', 'requestID': 'ae0ac8d8-585e-4037-9afd-8f0e727a0b7c', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Another Brick in the Wall Part 2", "replicaCount": 0, "value": " 374"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58018)
+I'm not responsible for id 24 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Another Brick in the Wall Part 2', 'value': ' 374'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'd821a003-84c4-4007-9469-b95478d65ce3', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id d821a003-84c4-4007-9469-b95478d65ce3
+Received '{"type": "insert", "requestID": "e005d3f2-d993-4ac2-a407-1aa253c9b2d0", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 299", "replicaCount": 0, "key": "Like a Prayer"}}' from ('192.168.1.5', 58028)
+I'm not responsible for id 43 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 299', 'key': 'Like a Prayer'}, 'type': 'insert', 'requestID': 'e005d3f2-d993-4ac2-a407-1aa253c9b2d0', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"requestID": "d821a003-84c4-4007-9469-b95478d65ce3", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54306)
+Received '{"type": "insert", "requestID": "3b22a3ba-393c-4c2c-bcce-07cd2c1badf1", "responseNodePort": "50100", "responseNodeIP": "192.168.1.5", "insert": {"value": " 297", "replicaCount": 0, "key": "One Way or Another"}}' from ('192.168.1.5', 58040)
+I'm responsible for insert with hash key 6 and value  297
+Received '{"responseNodePort": "42069", "insert": {"key": "Ticket to Ride", "replicaCount": 0, "value": " 383"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58048)
+I'm not responsible for id 33 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Ticket to Ride', 'value': ' 383'}, 'responseNodeIP': '192.168.1.3', 'requestID': '30a1355e-b316-4b74-a4ad-43fe89f3e809', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 30a1355e-b316-4b74-a4ad-43fe89f3e809
+Received '{"requestID": "30a1355e-b316-4b74-a4ad-43fe89f3e809", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54324)
+Received '{"type": "insert", "requestID": "a6d1cf2a-3f5b-4805-b440-8b2bb5d39b9c", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 300", "replicaCount": 0, "key": "Do Ya Think I\'m Sexy?"}}' from ('192.168.1.5', 58070)
+I'm responsible for insert with hash key 5 and value  300
+Received '{"responseNodePort": "42069", "requestID": "4df4fab6-9fa0-4442-a7af-420f05c83e58", "responseNodeIP": "192.168.1.2", "insert": {"value": " 310", "replicaCount": 0, "key": "Wake Up Little Susie"}, "type": "insert"}' from ('192.168.1.5', 58076)
+I'm not responsible for id 24 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 310', 'key': 'Wake Up Little Susie'}, 'type': 'insert', 'requestID': '4df4fab6-9fa0-4442-a7af-420f05c83e58', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "8472d428-25cb-432f-a6f0-e94e8024f9a4", "responseNodeIP": "192.168.1.2", "insert": {"value": " 313", "replicaCount": 0, "key": "Comfortably Numb"}, "type": "insert"}' from ('192.168.1.5', 58082)
+I'm not responsible for id 39 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 313', 'key': 'Comfortably Numb'}, 'type': 'insert', 'requestID': '8472d428-25cb-432f-a6f0-e94e8024f9a4', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "650a8021-8ec6-4824-9fe6-9f007db94149", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 318", "replicaCount": 0, "key": "School\'s Out"}}' from ('192.168.1.5', 58086)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 318', 'key': "School's Out"}, 'type': 'insert', 'requestID': '650a8021-8ec6-4824-9fe6-9f007db94149', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "40a45d30-c801-4f65-baa8-26db8a3b36e5", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 320", "replicaCount": 0, "key": "Cortez the Killer"}}' from ('192.168.1.5', 58094)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 320', 'key': 'Cortez the Killer'}, 'type': 'insert', 'requestID': '40a45d30-c801-4f65-baa8-26db8a3b36e5', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "93a2e0d8-44b6-409f-93b4-d371d74e67a2", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 314", "replicaCount": 0, "key": "Don\'t Let Me Be Misunderstood"}}' from ('192.168.1.5', 58098)
+I'm not responsible for id 44 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 314', 'key': "Don't Let Me Be Misunderstood"}, 'type': 'insert', 'requestID': '93a2e0d8-44b6-409f-93b4-d371d74e67a2', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "b1613753-7b42-48e9-80f2-8c8580e3851c", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 329", "replicaCount": 0, "key": "We Will Rock You"}}' from ('192.168.1.5', 58100)
+I'm not responsible for id 55 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 329', 'key': 'We Will Rock You'}, 'type': 'insert', 'requestID': 'b1613753-7b42-48e9-80f2-8c8580e3851c', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "37e23333-36be-4fc0-8a80-49b58f12b197", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 327", "replicaCount": 0, "key": "The End"}}' from ('192.168.1.5', 58110)
+I'm responsible for insert with hash key 1 and value  327
+Received '{"responseNodePort": "42069", "insert": {"key": "Sweet Home Alabama", "replicaCount": 0, "value": " 397"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58106)
+I'm not responsible for id 23 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Sweet Home Alabama', 'value': ' 397'}, 'responseNodeIP': '192.168.1.3', 'requestID': '2d9f80e3-4143-4382-868e-1a834cb76024', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 2d9f80e3-4143-4382-868e-1a834cb76024
+Received '{"type": "insert", "requestID": "3ea83c42-9a74-40a5-845a-34976d7abc85", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 325", "replicaCount": 0, "key": "Get Up (I Feel Like Being a) Sex Machine"}}' from ('192.168.1.5', 58126)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 325', 'key': 'Get Up (I Feel Like Being a) Sex Machine'}, 'type': 'insert', 'requestID': '3ea83c42-9a74-40a5-845a-34976d7abc85', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "3de795cb-b625-4d75-83e2-df28642ffebc", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 316", "replicaCount": 0, "key": "Many Rivers to Cross"}}' from ('192.168.1.5', 58128)
+I'm responsible for insert with hash key 5 and value  316
+Received '{"requestID": "2d9f80e3-4143-4382-868e-1a834cb76024", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54356)
+Received '{"type": "response", "requestID": "634308b5-1bbf-4f2b-9f67-b78f2eab2753", "response": "Finished adding all replicas\\n"}' from ('192.168.1.5', 58134)
+Received '{"responseNodePort": "42069", "insert": {"key": "I Feel Love", "replicaCount": 0, "value": " 410"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58122)
+I'm not responsible for id 31 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'I Feel Love', 'value': ' 410'}, 'responseNodeIP': '192.168.1.3', 'requestID': '01dbeb3c-7a4f-4f1c-a48f-24b18ddb50bf', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 01dbeb3c-7a4f-4f1c-a48f-24b18ddb50bf
+Received '{"requestID": "01dbeb3c-7a4f-4f1c-a48f-24b18ddb50bf", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54362)
+Received '{"type": "insert", "requestID": "b050ba38-8b24-4dcd-885a-c405d04b249b", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 315", "replicaCount": 0, "key": "Wish You Were Here"}}' from ('192.168.1.5', 58174)
+I'm not responsible for id 47 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 315', 'key': 'Wish You Were Here'}, 'type': 'insert', 'requestID': 'b050ba38-8b24-4dcd-885a-c405d04b249b', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "94851a47-3858-40ac-996c-21fe490cd426", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 335", "replicaCount": 0, "key": "Walk This Way"}}' from ('192.168.1.5', 58190)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 335', 'key': 'Walk This Way'}, 'type': 'insert', 'requestID': '94851a47-3858-40ac-996c-21fe490cd426', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "9b39814c-6b43-4f36-8395-b5685ae2aabd", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 339", "replicaCount": 0, "key": "Baba O\'Riley"}}' from ('192.168.1.5', 58198)
+I'm responsible for insert with hash key 1 and value  339
+Received '{"type": "insert", "requestID": "e7a7b5a8-b167-4b85-9a37-234ac87714dd", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 345", "replicaCount": 0, "key": "California Love"}}' from ('192.168.1.5', 58202)
+I'm not responsible for id 13 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 345', 'key': 'California Love'}, 'type': 'insert', 'requestID': 'e7a7b5a8-b167-4b85-9a37-234ac87714dd', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "7c5a8823-8739-45b2-8bd3-84533f0e9a9a", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 349", "replicaCount": 0, "key": "The Locomotion"}}' from ('192.168.1.5', 58206)
+I'm responsible for insert with hash key 1 and value  349
+Received '{"type": "insert", "requestID": "6afad464-5e39-4637-96e6-2711c721e71d", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 346", "replicaCount": 0, "key": "Candle in the Wind"}}' from ('192.168.1.5', 58210)
+I'm responsible for insert with hash key 6 and value  346
+Received '{"type": "insert", "requestID": "3d217ba0-01fb-4fb2-8a65-43608de777c3", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 340", "replicaCount": 0, "key": "The Harder They Come"}}' from ('192.168.1.5', 58218)
+I'm responsible for insert with hash key 62 and value  340
+Received '{"type": "insert", "requestID": "f60f8afc-dfaf-4a9c-8453-4b1941ebda18", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 347", "replicaCount": 0, "key": "That Lady (Part 1 and 2)"}}' from ('192.168.1.5', 58252)
+I'm responsible for insert with hash key 2 and value  347
+Received '{"type": "insert", "requestID": "3cb931e7-5850-4c85-abcb-acb46568902b", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 344", "replicaCount": 0, "key": "La Bamba"}}' from ('192.168.1.5', 58256)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 344', 'key': 'La Bamba'}, 'type': 'insert', 'requestID': '3cb931e7-5850-4c85-abcb-acb46568902b', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "8f4c7833-4716-4fdb-afdc-d48a7db250e9", "responseNodeIP": "192.168.1.2", "insert": {"value": " 361", "replicaCount": 0, "key": "All You Need Is Love"}, "type": "insert"}' from ('192.168.1.5', 58264)
+I'm not responsible for id 52 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 361', 'key': 'All You Need Is Love'}, 'type': 'insert', 'requestID': '8f4c7833-4716-4fdb-afdc-d48a7db250e9', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "f4ab26c5-8c4e-4a33-b122-3cda932a017c", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 358", "replicaCount": 0, "key": "Got My Mojo Working"}}' from ('192.168.1.5', 58268)
+I'm not responsible for id 54 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 358', 'key': 'Got My Mojo Working'}, 'type': 'insert', 'requestID': 'f4ab26c5-8c4e-4a33-b122-3cda932a017c', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "4c9676ff-59f1-4e9a-a49c-d553f8d8f213", "responseNodeIP": "192.168.1.2", "insert": {"value": " 356", "replicaCount": 0, "key": "Little Wing"}, "type": "insert"}' from ('192.168.1.5', 58278)
+I'm responsible for insert with hash key 63 and value  356
+Received '{"type": "insert", "requestID": "7cd4de8f-f06c-458d-be4c-19b708913722", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 354", "replicaCount": 0, "key": "Bad Moon Rising"}}' from ('192.168.1.5', 58280)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 354', 'key': 'Bad Moon Rising'}, 'type': 'insert', 'requestID': '7cd4de8f-f06c-458d-be4c-19b708913722', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "56a163e4-c9b6-4542-92ea-6efe3967050f", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 364", "replicaCount": 0, "key": "Unchained Melody"}}' from ('192.168.1.5', 58290)
+I'm not responsible for id 44 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 364', 'key': 'Unchained Melody'}, 'type': 'insert', 'requestID': '56a163e4-c9b6-4542-92ea-6efe3967050f', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "9e65da2a-51ad-410e-9aa9-f82f077c8441", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 369", "replicaCount": 0, "key": "The Wind Cries Mary"}}' from ('192.168.1.5', 58312)
+I'm not responsible for id 55 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 369', 'key': 'The Wind Cries Mary'}, 'type': 'insert', 'requestID': '9e65da2a-51ad-410e-9aa9-f82f077c8441', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "d1012937-5da9-41bc-bb89-40851dc75803", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 368", "replicaCount": 0, "key": "I\'m A Man"}}' from ('192.168.1.5', 58328)
+I'm not responsible for id 51 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 368', 'key': "I'm A Man"}, 'type': 'insert', 'requestID': 'd1012937-5da9-41bc-bb89-40851dc75803', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "0d7727af-24fd-481d-adfe-b8013e088e47", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 375", "replicaCount": 0, "key": "Fake Plastic Trees"}}' from ('192.168.1.5', 58340)
+I'm responsible for insert with hash key 63 and value  375
+Received '{"type": "insert", "requestID": "e359acd5-5a7a-46d2-85ec-0b83fbfa1083", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 377", "replicaCount": 0, "key": "Pride (In The Name of Love)"}}' from ('192.168.1.5', 58358)
+I'm responsible for insert with hash key 63 and value  377
+Received '{"type": "insert", "requestID": "4c6ef22c-e7ed-4265-b707-f852d7cdae6f", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 380", "replicaCount": 0, "key": "Tell It Like It Is"}}' from ('192.168.1.5', 58362)
+I'm responsible for insert with hash key 3 and value  380
+Received '{"type": "insert", "requestID": "aa015b3c-310e-4bbf-8603-1f46c256224d", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 378", "replicaCount": 0, "key": "Radio Free Europe"}}' from ('192.168.1.5', 58364)
+I'm not responsible for id 41 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 378', 'key': 'Radio Free Europe'}, 'type': 'insert', 'requestID': 'aa015b3c-310e-4bbf-8603-1f46c256224d', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "1a169ea4-2f6f-423c-bed9-27a5370f0b74", "responseNodeIP": "192.168.1.2", "insert": {"value": " 384", "replicaCount": 0, "key": "Ohio"}, "type": "insert"}' from ('192.168.1.5', 58378)
+I'm not responsible for id 22 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 384', 'key': 'Ohio'}, 'type': 'insert', 'requestID': '1a169ea4-2f6f-423c-bed9-27a5370f0b74', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Super Freak", "replicaCount": 0, "value": " 477"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58374)
+I'm not responsible for id 44 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Super Freak', 'value': ' 477'}, 'responseNodeIP': '192.168.1.3', 'requestID': '00e9990a-50b8-45e1-946c-985cb25c23a4', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 00e9990a-50b8-45e1-946c-985cb25c23a4
+Received '{"type": "insert", "requestID": "4e70c046-3bef-4112-874f-146a65706194", "responseNodePort": "50100", "responseNodeIP": "192.168.1.2", "insert": {"value": " 385", "replicaCount": 0, "key": "I Know You Got Soul"}}' from ('192.168.1.5', 58388)
+I'm responsible for insert with hash key 63 and value  385
+Received '{"type": "insert", "requestID": "799b97b0-7870-4dda-ab43-14ae1d0500f9", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 390", "replicaCount": 0, "key": "Band of Gold"}}' from ('192.168.1.5', 58394)
+I'm not responsible for id 29 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 390', 'key': 'Band of Gold'}, 'type': 'insert', 'requestID': '799b97b0-7870-4dda-ab43-14ae1d0500f9', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "00e9990a-50b8-45e1-946c-985cb25c23a4", "type": "response"}' from ('192.168.1.1', 55872)
+Received '{"responseNodePort": "42069", "requestID": "319b78ed-5380-4a21-88f6-ebb540e35cee", "responseNodeIP": "192.168.1.2", "insert": {"value": " 392", "replicaCount": 0, "key": "Summer in the City"}, "type": "insert"}' from ('192.168.1.5', 58398)
+I'm not responsible for id 58 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 392', 'key': 'Summer in the City'}, 'type': 'insert', 'requestID': '319b78ed-5380-4a21-88f6-ebb540e35cee', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "1790b0af-e885-4198-b20b-5d27c4ea7795", "responseNodeIP": "192.168.1.2", "insert": {"value": " 391", "replicaCount": 0, "key": "O-o-h Child"}, "type": "insert"}' from ('192.168.1.5', 58424)
+I'm not responsible for id 33 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 391', 'key': 'O-o-h Child'}, 'type': 'insert', 'requestID': '1790b0af-e885-4198-b20b-5d27c4ea7795', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "insert": {"key": "Desperado", "replicaCount": 0, "value": " 494"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58416)
+I'm not responsible for id 29 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'Desperado', 'value': ' 494'}, 'responseNodeIP': '192.168.1.3', 'requestID': 'c753b7b9-1f7f-4d00-b015-5ec4627c0444', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id c753b7b9-1f7f-4d00-b015-5ec4627c0444
+Received '{"responseNodePort": "42069", "insert": {"key": "I Will Survive", "replicaCount": 0, "value": " 489"}, "type": "insert", "responseNodeIP": "192.168.1.3"}\n' from ('192.168.1.5', 58408)
+I'm not responsible for id 44 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'key': 'I Will Survive', 'value': ' 489'}, 'responseNodeIP': '192.168.1.3', 'requestID': '6ef9b6a1-01c1-4b03-bb1e-174262d752fa', 'responseNodePort': '42069', 'type': 'insert'} to 192.168.1.5:50100
+Waiting for response for request id 6ef9b6a1-01c1-4b03-bb1e-174262d752fa
+Received '{"responseNodePort": "42069", "requestID": "84199bfc-4c38-4ea0-a1b9-f8ffafcfd189", "responseNodeIP": "192.168.1.2", "insert": {"value": " 396", "replicaCount": 0, "key": "(Don\'t Fear) the Reaper"}, "type": "insert"}' from ('192.168.1.5', 58436)
+I'm not responsible for id 30 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 396', 'key': "(Don't Fear) the Reaper"}, 'type': 'insert', 'requestID': '84199bfc-4c38-4ea0-a1b9-f8ffafcfd189', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "25c13617-d745-41b4-b523-81df7f67f057", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 398", "replicaCount": 0, "key": "Enter Sandman"}}' from ('192.168.1.5', 58442)
+I'm not responsible for id 55 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 398', 'key': 'Enter Sandman'}, 'type': 'insert', 'requestID': '25c13617-d745-41b4-b523-81df7f67f057', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "743bb80e-6950-47be-a5c8-9a6477f9c080", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 395", "replicaCount": 0, "key": "Thirteen"}}' from ('192.168.1.5', 58444)
+I'm not responsible for id 47 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 395', 'key': 'Thirteen'}, 'type': 'insert', 'requestID': '743bb80e-6950-47be-a5c8-9a6477f9c080', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "66cbc67d-5a13-4cd3-92da-059a6eae70bb", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 399", "replicaCount": 0, "key": "Kicks"}}' from ('192.168.1.5', 58450)
+I'm not responsible for id 18 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 399', 'key': 'Kicks'}, 'type': 'insert', 'requestID': '66cbc67d-5a13-4cd3-92da-059a6eae70bb', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"requestID": "c753b7b9-1f7f-4d00-b015-5ec4627c0444", "response": "Finished adding all replicas\\n", "type": "response"}' from ('192.168.1.3', 54536)
+Received '{"type": "insert", "requestID": "dc67478b-1f39-404b-a1fc-b08b683e0d98", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 401", "replicaCount": 0, "key": "Thank You (Falettinme Be Mice Elf Agin)"}}' from ('192.168.1.5', 58452)
+I'm not responsible for id 37 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 401', 'key': 'Thank You (Falettinme Be Mice Elf Agin)'}, 'type': 'insert', 'requestID': 'dc67478b-1f39-404b-a1fc-b08b683e0d98', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"response": "Finished adding all replicas\\n", "requestID": "6ef9b6a1-01c1-4b03-bb1e-174262d752fa", "type": "response"}' from ('192.168.1.1', 55912)
+Received '{"type": "insert", "requestID": "4e7eb262-d4fe-4be1-9c37-234cbfcfac69", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 402", "replicaCount": 0, "key": "C\'mon Everybody"}}' from ('192.168.1.5', 58456)
+I'm responsible for insert with hash key 3 and value  402
+Received '{"responseNodePort": "42069", "requestID": "ed64e2ce-8fb6-458d-85ef-64bf43121c65", "responseNodeIP": "192.168.1.2", "insert": {"value": " 408", "replicaCount": 0, "key": "Crossroads"}, "type": "insert"}' from ('192.168.1.5', 58460)
+I'm not responsible for id 26 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 408', 'key': 'Crossroads'}, 'type': 'insert', 'requestID': 'ed64e2ce-8fb6-458d-85ef-64bf43121c65', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "0289f55e-881d-4bab-842e-7a716750bc6c", "responseNodeIP": "192.168.1.2", "insert": {"value": " 412", "replicaCount": 0, "key": "The Girl Can\'t Help It"}, "type": "insert"}' from ('192.168.1.5', 58462)
+I'm not responsible for id 30 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 412', 'key': "The Girl Can't Help It"}, 'type': 'insert', 'requestID': '0289f55e-881d-4bab-842e-7a716750bc6c', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "7bf6a9f7-902e-43f3-85a3-fee0d1533035", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 407", "replicaCount": 0, "key": "Sweet Emotion"}}' from ('192.168.1.5', 58468)
+I'm responsible for insert with hash key 63 and value  407
+Received '{"responseNodePort": "42069", "requestID": "741fdf7e-3cad-4425-ae53-c7476307d5d8", "responseNodeIP": "192.168.1.2", "insert": {"value": " 400", "replicaCount": 0, "key": "Tonight\'s the Night"}, "type": "insert"}' from ('192.168.1.5', 58472)
+I'm not responsible for id 29 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 400', 'key': "Tonight's the Night"}, 'type': 'insert', 'requestID': '741fdf7e-3cad-4425-ae53-c7476307d5d8', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "b1161638-0e2a-4948-aeff-bd960f12f2e6", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 416", "replicaCount": 0, "key": "Fuck tha Police"}}' from ('192.168.1.5', 58474)
+I'm responsible for insert with hash key 6 and value  416
+Received '{"type": "insert", "requestID": "0fd9a82f-4b62-4d92-ad25-6a8b56182e42", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 420", "replicaCount": 0, "key": "Piano Man"}}' from ('192.168.1.5', 58480)
+I'm not responsible for id 38 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 420', 'key': 'Piano Man'}, 'type': 'insert', 'requestID': '0fd9a82f-4b62-4d92-ad25-6a8b56182e42', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "cabf2f59-5917-42ea-a547-ab045d432d92", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 405", "replicaCount": 0, "key": "I Believe I Can Fly"}}' from ('192.168.1.5', 58482)
+I'm responsible for insert with hash key 0 and value  405
+Received '{"type": "insert", "requestID": "e232fb8b-ea75-4650-b370-e9b0cc7d6fdc", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 418", "replicaCount": 0, "key": "Nuthin\' But a \'G\' Thang"}}' from ('192.168.1.5', 58486)
+I'm not responsible for id 53 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 418', 'key': "Nuthin' But a 'G' Thang"}, 'type': 'insert', 'requestID': 'e232fb8b-ea75-4650-b370-e9b0cc7d6fdc', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "9ff3528d-b2aa-4f8c-a2be-db4b98212fc6", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 419", "replicaCount": 0, "key": "It\'s Your Thing"}}' from ('192.168.1.5', 58488)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 419', 'key': "It's Your Thing"}, 'type': 'insert', 'requestID': '9ff3528d-b2aa-4f8c-a2be-db4b98212fc6', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "5cdd0afb-3a55-4129-92fc-8e94e92746cd", "responseNodeIP": "192.168.1.2", "insert": {"value": " 424", "replicaCount": 0, "key": "William"}, "type": "insert"}' from ('192.168.1.5', 58492)
+I'm responsible for insert with hash key 3 and value  424
+Received '{"type": "insert", "requestID": "efac02e4-cd28-40c3-a355-e3e973372194", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 421", "replicaCount": 0, "key": "Lola"}}' from ('192.168.1.5', 58496)
+I'm responsible for insert with hash key 6 and value  421
+Received '{"responseNodePort": "42069", "requestID": "a96287ac-9850-43d8-9046-3e1101ae03f9", "responseNodeIP": "192.168.1.2", "insert": {"value": " 429", "replicaCount": 0, "key": "Everybody Needs Somebody to Love"}, "type": "insert"}' from ('192.168.1.5', 58502)
+I'm not responsible for id 29 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 429', 'key': 'Everybody Needs Somebody to Love'}, 'type': 'insert', 'requestID': 'a96287ac-9850-43d8-9046-3e1101ae03f9', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "ab854950-40f8-420d-99c5-128034db9b09", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 446", "replicaCount": 0, "key": "Pressure Drop"}}' from ('192.168.1.5', 58504)
+I'm not responsible for id 27 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 446', 'key': 'Pressure Drop'}, 'type': 'insert', 'requestID': 'ab854950-40f8-420d-99c5-128034db9b09', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "238fa2bb-0a6b-4331-ae7d-e606e16c1598", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 440", "replicaCount": 0, "key": "Push It"}}' from ('192.168.1.5', 58512)
+I'm responsible for insert with hash key 2 and value  440
+Received '{"responseNodePort": "42069", "requestID": "a940fd28-d20d-4bfd-8077-95b980a0b022", "responseNodeIP": "192.168.1.2", "insert": {"value": " 442", "replicaCount": 0, "key": "Keep a Knockin\'"}, "type": "insert"}' from ('192.168.1.5', 58514)
+I'm not responsible for id 22 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 442', 'key': "Keep a Knockin'"}, 'type': 'insert', 'requestID': 'a940fd28-d20d-4bfd-8077-95b980a0b022', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "44fb3e74-aadb-4454-86b8-7e355526fa10", "responseNodeIP": "192.168.1.2", "insert": {"value": " 447", "replicaCount": 0, "key": "Leader of the Pack"}, "type": "insert"}' from ('192.168.1.5', 58518)
+I'm not responsible for id 54 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 447', 'key': 'Leader of the Pack'}, 'type': 'insert', 'requestID': '44fb3e74-aadb-4454-86b8-7e355526fa10', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "4f4c50b2-9870-4f4c-81e4-080881761e3d", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 428", "replicaCount": 0, "key": "Wheels"}}' from ('192.168.1.5', 58524)
+I'm responsible for insert with hash key 62 and value  428
+Received '{"type": "insert", "requestID": "898911c8-4be7-40df-b14c-c35ee20a76ca", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 437", "replicaCount": 0, "key": "Love Me Tender"}}' from ('192.168.1.5', 58526)
+I'm responsible for insert with hash key 1 and value  437
+Received '{"type": "insert", "requestID": "a1bb284a-182b-4717-b7a1-9a17ac77df99", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 448", "replicaCount": 0, "key": "Heroin"}}' from ('192.168.1.5', 58528)
+I'm not responsible for id 49 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 448', 'key': 'Heroin'}, 'type': 'insert', 'requestID': 'a1bb284a-182b-4717-b7a1-9a17ac77df99', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "eac45945-95b0-455a-8e52-6ddce8f3fd04", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 458", "replicaCount": 0, "key": "Soul Man"}}' from ('192.168.1.5', 58530)
+I'm not responsible for id 44 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 458', 'key': 'Soul Man'}, 'type': 'insert', 'requestID': 'eac45945-95b0-455a-8e52-6ddce8f3fd04', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "a7a4d4c5-ebd6-41e6-b440-cd284b03bb41", "responseNodeIP": "192.168.1.2", "insert": {"value": " 457", "replicaCount": 0, "key": "Sheena Is a Punk Rocker"}, "type": "insert"}' from ('192.168.1.5', 58536)
+I'm not responsible for id 35 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 457', 'key': 'Sheena Is a Punk Rocker'}, 'type': 'insert', 'requestID': 'a7a4d4c5-ebd6-41e6-b440-cd284b03bb41', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "f81961a8-eb78-44f1-92a1-ab18a621d9cc", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 462", "replicaCount": 0, "key": "Respect Yourself"}}' from ('192.168.1.5', 58538)
+I'm not responsible for id 35 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 462', 'key': 'Respect Yourself'}, 'type': 'insert', 'requestID': 'f81961a8-eb78-44f1-92a1-ab18a621d9cc', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "ae6ce995-a163-4055-8d71-b154b38b11d1", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 459", "replicaCount": 0, "key": "Rollin\' Stone"}}' from ('192.168.1.5', 58542)
+I'm not responsible for id 18 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 459', 'key': "Rollin' Stone"}, 'type': 'insert', 'requestID': 'ae6ce995-a163-4055-8d71-b154b38b11d1', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "3f5ce739-2f12-4000-82e2-7113786ca56b", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 463", "replicaCount": 0, "key": "Rain"}}' from ('192.168.1.5', 58550)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 463', 'key': 'Rain'}, 'type': 'insert', 'requestID': '3f5ce739-2f12-4000-82e2-7113786ca56b', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "83a7f06e-2b84-4022-8c2f-8aad609e88e1", "responseNodeIP": "192.168.1.2", "insert": {"value": " 465", "replicaCount": 0, "key": "Surrender"}, "type": "insert"}' from ('192.168.1.5', 58552)
+I'm not responsible for id 43 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 465', 'key': 'Surrender'}, 'type': 'insert', 'requestID': '83a7f06e-2b84-4022-8c2f-8aad609e88e1', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "c27615f6-c876-42a4-8e7c-10bc6f82664b", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 451", "replicaCount": 0, "key": "The Twist"}}' from ('192.168.1.5', 58558)
+I'm not responsible for id 56 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 451', 'key': 'The Twist'}, 'type': 'insert', 'requestID': 'c27615f6-c876-42a4-8e7c-10bc6f82664b', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "68dd1eef-71b5-4f84-9505-1ac9176ee1f9", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 464", "replicaCount": 0, "key": "Standing in the Shadows of Love"}}' from ('192.168.1.5', 58560)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 464', 'key': 'Standing in the Shadows of Love'}, 'type': 'insert', 'requestID': '68dd1eef-71b5-4f84-9505-1ac9176ee1f9', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "f71cb583-b3c5-4b03-b551-967dd4a5b919", "responseNodeIP": "192.168.1.2", "insert": {"value": " 469", "replicaCount": 0, "key": "It\'s Too Late"}, "type": "insert"}' from ('192.168.1.5', 58564)
+I'm not responsible for id 28 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 469', 'key': "It's Too Late"}, 'type': 'insert', 'requestID': 'f71cb583-b3c5-4b03-b551-967dd4a5b919', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "1552834f-e5fd-4f58-953a-f3313b5fdddf", "responseNodeIP": "192.168.1.2", "insert": {"value": " 468", "replicaCount": 0, "key": "Search and Destroy"}, "type": "insert"}' from ('192.168.1.5', 58568)
+I'm not responsible for id 48 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 468', 'key': 'Search and Destroy'}, 'type': 'insert', 'requestID': '1552834f-e5fd-4f58-953a-f3313b5fdddf', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "67bea989-ae60-4984-b329-1fd1bb83f691", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 479", "replicaCount": 0, "key": "Lady Marmalade"}}' from ('192.168.1.5', 58576)
+I'm responsible for insert with hash key 62 and value  479
+Received '{"type": "insert", "requestID": "a243186d-87de-438e-bf17-d53ba0031091", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 474", "replicaCount": 0, "key": "One Nation Under a Groove"}}' from ('192.168.1.5', 58578)
+I'm not responsible for id 46 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 474', 'key': 'One Nation Under a Groove'}, 'type': 'insert', 'requestID': 'a243186d-87de-438e-bf17-d53ba0031091', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "244711d5-59dc-45e5-be3c-9b9294cc8f7f", "responseNodePort": "42069", "responseNodeIP": "192.168.1.4", "insert": {"value": " 471", "replicaCount": 0, "key": "On the Road Again"}}' from ('192.168.1.5', 58580)
+I'm responsible for insert with hash key 2 and value  471
+Received '{"responseNodePort": "42069", "requestID": "8b6846b3-c67b-42fa-924e-437f65a4815b", "responseNodeIP": "192.168.1.2", "insert": {"value": " 481", "replicaCount": 0, "key": "Young Americans"}, "type": "insert"}' from ('192.168.1.5', 58584)
+I'm not responsible for id 50 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 481', 'key': 'Young Americans'}, 'type': 'insert', 'requestID': '8b6846b3-c67b-42fa-924e-437f65a4815b', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.2'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "980e0549-6975-4d54-a987-a6b493da21f6", "responseNodePort": "50100", "responseNodeIP": "192.168.1.1", "insert": {"value": " 478", "replicaCount": 0, "key": "White Rabbit"}}' from ('192.168.1.5', 58586)
+I'm not responsible for id 47 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 478', 'key': 'White Rabbit'}, 'type': 'insert', 'requestID': '980e0549-6975-4d54-a987-a6b493da21f6', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "5b18842f-0d47-47a3-8bec-bf964c41673b", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 485", "replicaCount": 0, "key": "Graceland"}}' from ('192.168.1.5', 58592)
+I'm not responsible for id 60 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 485', 'key': 'Graceland'}, 'type': 'insert', 'requestID': '5b18842f-0d47-47a3-8bec-bf964c41673b', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "0a0b06c4-3eca-4342-818b-087cecf09dfc", "responseNodePort": "50100", "responseNodeIP": "192.168.1.4", "insert": {"value": " 482", "replicaCount": 0, "key": "I\'m Eighteen"}}' from ('192.168.1.5', 58594)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 482', 'key': "I'm Eighteen"}, 'type': 'insert', 'requestID': '0a0b06c4-3eca-4342-818b-087cecf09dfc', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.4'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "848538ff-07da-490e-9a80-14d7337384bf", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 484", "replicaCount": 0, "key": "I Love Rock \'N Roll"}}' from ('192.168.1.5', 58598)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 484', 'key': "I Love Rock 'N Roll"}, 'type': 'insert', 'requestID': '848538ff-07da-490e-9a80-14d7337384bf', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"responseNodePort": "42069", "requestID": "d2cfa229-8058-4076-ba5b-2a9169ab2a13", "responseNodeIP": "192.168.1.2", "insert": {"value": " 483", "replicaCount": 0, "key": "Just Like Heaven"}, "type": "insert"}' from ('192.168.1.5', 58602)
+I'm responsible for insert with hash key 62 and value  483
+Received '{"type": "insert", "requestID": "c5e56350-7b48-4088-897b-51b455c2d734", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 486", "replicaCount": 0, "key": "How Soon Is Now?"}}' from ('192.168.1.5', 58606)
+I'm not responsible for id 48 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 486', 'key': 'How Soon Is Now?'}, 'type': 'insert', 'requestID': 'c5e56350-7b48-4088-897b-51b455c2d734', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "2f255414-e198-4850-b316-70a09b813d8b", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 488", "replicaCount": 0, "key": "Rhiannon (Will You Ever Win)"}}' from ('192.168.1.5', 58608)
+I'm responsible for insert with hash key 2 and value  488
+Received '{"type": "insert", "requestID": "7507104f-f7e8-440f-8360-a00bbc891428", "responseNodePort": "42069", "responseNodeIP": "192.168.1.5", "insert": {"value": " 495", "replicaCount": 0, "key": "Shop Around"}}' from ('192.168.1.5', 58612)
+I'm not responsible for id 48 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 495', 'key': 'Shop Around'}, 'type': 'insert', 'requestID': '7507104f-f7e8-440f-8360-a00bbc891428', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.5'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "c6b69807-72cd-413e-a950-c94b956ff17c", "responseNodePort": "50100", "responseNodeIP": "192.168.1.3", "insert": {"value": " 487", "replicaCount": 0, "key": "Under the Boardwalk"}}' from ('192.168.1.5', 58614)
+I'm not responsible for id 57 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 487', 'key': 'Under the Boardwalk'}, 'type': 'insert', 'requestID': 'c6b69807-72cd-413e-a950-c94b956ff17c', 'responseNodePort': '50100', 'responseNodeIP': '192.168.1.3'} to 192.168.1.5:50100
+Received '{"type": "insert", "requestID": "5fd05ee9-3c00-4747-ad7d-41b982ccf6d3", "responseNodePort": "42069", "responseNodeIP": "192.168.1.1", "insert": {"value": " 499", "replicaCount": 0, "key": "The Boys Are Back in Town"}}' from ('192.168.1.5', 58618)
+I'm not responsible for id 61 send to previous with ip 192.168.1.5
+Sending {'insert': {'replicaCount': 0, 'value': ' 499', 'key': 'The Boys Are Back in Town'}, 'type': 'insert', 'requestID': '5fd05ee9-3c00-4747-ad7d-41b982ccf6d3', 'responseNodePort': '42069', 'responseNodeIP': '192.168.1.1'} to 192.168.1.5:50100

@@ -77,11 +77,10 @@ else:
 msg['responseNodeIP'] = responseIP
 msg['responseNodePort'] = str(responsePort)
 msg = json.dumps(msg)
-msg += '\r'
 
 print(repr('Sending %s' % msg))
 socket.sendall(msg.encode())
-print('Received %s' % socket.recv(999999).decode())
+print('Received %s' % socket.recv(999999999).decode())
 
 
 

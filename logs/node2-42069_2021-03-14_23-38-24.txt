@@ -1,6 +1,0 @@
-My ip is 192.168.1.4
-192.168.1.4:42069 with id 56 starting to listen
-Received '{"ip": "192.168.1.1", "type": "prev", "port": 50100}' from ('192.168.1.2', 35050)
-Added 192.168.1.1:50100 as previous
-Received '{"ip": "192.168.1.2", "type": "next", "port": 50100}' from ('192.168.1.2', 35052)
-Added 192.168.1.2:50100 as next

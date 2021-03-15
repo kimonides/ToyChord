@@ -18,9 +18,10 @@ while IFS=',' read key value
 do
     index=$(($RANDOM % $size))
     read -a strarr <<< "${VMs[$index]}"
-    printf "3\n$key\n$value" | python3 client.py ${strarr[0]} ${strarr[1]} >/dev/null &
+    echo '{"responseNodePort": "'"${strarr[1]}"'", "insert": {"key": "'"$key"'", "replicaCount": 0, "value": "'"$value"'"}, "type": "insert", "responseNodeIP": "'"${strarr[0]}"'"}'\
+    | nc ${strarr[0]} ${strarr[1]} > /dev/null &
 done < insert.txt
 
-wait $!
+wait
 
 

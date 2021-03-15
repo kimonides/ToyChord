@@ -80,7 +80,7 @@ class Node:
             self.data[key]['ownerID']=int(request['insert']['ownerID'])
             request['insert']['replicaCount'] = replicaCount + 1
             if( request['insert']['replicaCount'] == k or self.data[key]['ownerID'] == self.next.id or self.data[key]['ownerID'] == self.id):
-                return self.sendResponse(request,'Finished adding all replicas')
+                return self.sendResponse(request,'Finished adding all replicas\n')
             else:
                 self.send(request,self.next)
         else:
@@ -136,11 +136,24 @@ class Node:
             return self.send(request,self.next)
 
 
+    
 
     def query(self,request):
         key = request['query']['key']
         hash_key = self.hash(key)
-        if(self.isResponsible(hash_key)):
+        if(key == '*'):
+            for k,v in self.data.items():
+                if v['replicaCount'] == 0 :
+                    if('response' in request):
+                        request['response'] += ', %s:%s' % (k,v['value'])
+                    else:
+                        request['response'] = '%s:%s' % (k,v['value'])
+            if(self.next.ip == request['responseNodeIP'] and self.next.port == int(request['responseNodePort'])):
+                response = request['response']
+                return self.sendResponse(request,response)
+            else:
+                return self.send(request,self.next)
+        elif(self.isResponsible(hash_key)):
             if key in self.data:
                 resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
                 return self.sendResponse(request,resp)
