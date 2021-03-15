@@ -1,5 +1,5 @@
 # ignore all . files and . folders
 .*
-logs
+logs/*
 # Dont ignore .gitignore (this file)
 !/.gitignore
