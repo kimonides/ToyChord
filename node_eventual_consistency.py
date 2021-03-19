@@ -82,7 +82,7 @@ class Node:
             if( request['insert']['replicaCount'] < k and self.data[key]['ownerID'] != self.next.id):
                 self.send(request,self.next)
             if(self.isResponsible(key)):
-                self.sendResponse(request,'OK')
+                return self.sendResponse(request,'OK')
         else:
             print("I'm not responsible for id %s send to previous with ip %s" % (hash_key,self.previous.ip))
             return self.send(request,self.previous)
