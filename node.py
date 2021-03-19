@@ -90,10 +90,13 @@ class Node:
 
     def delete(self,request):
         key = request['delete']['key']
-        hask_key = self.hash(key)
-        if(self.isResponsible(hash_key)):
-            self.data.pop(key)
-            return self.sendResponse(request,'OK')
+        if( key in self.data ):
+            v = self.data.pop(key)
+            self.sendResponse(request,'OK')
+            if v['replicaCount'] == k-1 or self.isNextNodeTerminal(request) :
+                self.sendResponse(request,'OK')
+            else:
+                self.send(request,self.next)
         else:
             return self.send(request,self.next)
 
@@ -118,8 +121,6 @@ class Node:
                 value = data['value']
                 replicaCount = data['replicaCount']
                 ownerID = data['ownerID']
-                # if targetNode is previous then send him all my replicas and keys not belonging to me
-                # if targetNode is next send him all my replicas and all my keys
                 if(ownerID != targetNode.id):
                     ownerID = targetNode.id if not self.isResponsible(key) else ownerID
                     print('Sending key hash %s to %s' % (key,targetNode.ip))
@@ -136,6 +137,9 @@ class Node:
         else:
             return self.send(request,self.next)
 
+    def isNextNodeTerminal(self,request):
+        return self.next.ip == request['responseNodeIP'] and self.next.port == int(request['responseNodePort'])
+
     def query(self,request):
         key = request['query']['key']
         hash_key = self.hash(key)
@@ -146,18 +150,16 @@ class Node:
                         request['response'] += ', %s:%s' % (kk,v['value'])
                     else:
                         request['response'] = '%s:%s' % (kk,v['value'])
-            if(self.next.ip == request['responseNodeIP'] and self.next.port == int(request['responseNodePort'])):
+            if(self.isNextNodeTerminal(request)):
                 response = request['response']
                 return self.sendResponse(request,response)
             else:
                 return self.send(request,self.next)
-        elif(key in self.data and (self.data[key]['replicaCount'] == k-1 or self.next.ip == request['responseNodeIP'] and self.next.port == int(request['responseNodePort']))):
-        # elif(self.isResponsible(hash_key)):
-            if key in self.data:
-                resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
-                return self.sendResponse(request,resp)
-            else:
-                return self.sendResponse(request,"Key %s doesn't exist in the DHT" % key)
+        elif(key in self.data and (self.data[key]['replicaCount'] == k-1 or self.isNextNodeTerminal(request))):
+            resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
+            return self.sendResponse(request,resp)
+        elif(self.isResponsible(hash_key) and key not in self.data):
+            return self.sendResponse(request,"Key %s doesn't exist in the DHT" % key)
         else:
             return self.send(request,self.next)
 
@@ -165,7 +167,6 @@ class Node:
         ip = request['join']['ip']
         port = request['join']['port']
         joinID = self.hash('%s:%s' % (ip,port))
-        # if(self.previous.id < joinID < self.id or self.previous is self):
         if(self.isResponsible(joinID)):
             oldPrevIP = self.previous.ip
             oldPrevPort = self.previous.port
@@ -206,8 +207,9 @@ class Node:
             request['response'] += str(self)
         else:
             request['response'] = str(self)
-        if(self.next.ip == masterIP and self.next.port == masterPort):
+        if(self.isNextNodeTerminal(request)):
             response = request['response']
             return self.sendResponse(request,response)
         return self.send(request,self.next)
 
+# TODO CHANGE IS RESPONSIBLE TO TAKE KEY NOT HASH KEY
