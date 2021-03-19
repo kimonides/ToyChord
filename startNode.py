@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from node import Node
+from node_eventual_consistency import Node
 import socket
 import fcntl
 import struct
