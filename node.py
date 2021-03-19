@@ -92,11 +92,10 @@ class Node:
         key = request['delete']['key']
         if( key in self.data ):
             v = self.data.pop(key)
-            self.sendResponse(request,'OK')
             if v['replicaCount'] == k-1 or self.isNextNodeTerminal(request) :
-                self.sendResponse(request,'OK')
+                return self.sendResponse(request,'OK')
             else:
-                self.send(request,self.next)
+                return self.send(request,self.next)
         else:
             return self.send(request,self.next)
 
