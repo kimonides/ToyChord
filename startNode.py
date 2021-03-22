@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 
-from node_eventual_consistency import Node
+from node import Node
 import socket
 import fcntl
 import struct
 import sys
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+use_eventual = int(config['DEFAULT']['use_eventual'])
 
 def get_ip_address(ifname):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -15,6 +21,12 @@ def get_ip_address(ifname):
     )[20:24])
 
 if __name__ == "__main__":
+    if(use_eventual):
+        from node_eventual_consistency import Node
+        print('Using eventual consistency')
+    else:
+        from node import Node
+        print('Using chain replication')
     ip = get_ip_address('eth1')
     port = int(sys.argv[1])
     print('My ip is %s' % ip)
