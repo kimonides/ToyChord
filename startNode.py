@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-from node import Node
 import socket
 import fcntl
 import struct
