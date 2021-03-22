@@ -79,10 +79,12 @@ class Node:
                 print("I'm replica number %s for hash key %s" % (replicaCount,hash_key))
             self.data[key]['ownerID']=int(request['insert']['ownerID'])
             request['insert']['replicaCount'] = replicaCount + 1
+            r = None
+            if(self.isResponsible(key)):
+                r = self.sendResponse(request,'OK')
             if( request['insert']['replicaCount'] < k and self.data[key]['ownerID'] != self.next.id):
                 self.send(request,self.next)
-            if(self.isResponsible(key)):
-                return self.sendResponse(request,'OK')
+            return r
         else:
             print("I'm not responsible for id %s send to previous with ip %s" % (hash_key,self.previous.ip))
             return self.send(request,self.previous)
