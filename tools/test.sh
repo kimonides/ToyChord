@@ -1,2 +1,0 @@
-echo '{"responseNodePort": "42069", "query": {"key": "Like a Rolling Stone"}, "type": "query", "responseNodeIP": "192.168.1.5"}' | nc 192.168.1.5 42069 
-echo '{"responseNodePort": "42069", "insert": {"key": "Like a Rolling Stone", "replicaCount": 0, "value": "500"}, "type": "insert", "responseNodeIP": "192.168.1.5"}' | nc 192.168.1.5 42069
