@@ -18,17 +18,15 @@ responseIP = sys.argv[1]
 responsePort = int(sys.argv[2])
 
 
-socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-socket.connect((responseIP,responsePort))
-
-# print('1)Join')
-# print('2)Depart')
-# print('3)Insert')
-# print('4)Delete')
-# print('5)Query')
-# print('6)Ping')
-# cmd = input('Input the number of the command you with to run:')
-cmd = input()
+print('1)Join')
+print('2)Depart')
+print('3)Insert')
+print('4)Delete')
+print('5)Query')
+print('6)Ping')
+print('7)Help')
+cmd = input('Input the number of the command you with to run:')
+# cmd = input()
 
 msg = {}
 
@@ -69,10 +67,34 @@ elif(cmd=='5' or cmd=='query'):
     msg['query'] = {
         'key':key
     }
-elif(cmd=='6' or cmd=='ping'):
+elif(cmd=='6' or cmd=='ping' or cmd=='overlay'):
     msg['type'] = 'ping'
+elif(cmd=='7' or cmd=='help'):
+    print(" -------------------------------------------------------------------------- ")
+    print("|   This is a client able to send requests to the distributed hash table  |")
+    print("|                                                                         |")
+    print('|        join    Inserts a new node into the DHT                          |')
+    print('|                Data will be redistributed as needed to the new node     |')
+    print('|        depart  Removes a node from the DHT                              |')
+    print("|                Finds the node by ID and redistributed it's data         |")
+    print('|        insert  Inserts a new key value pair into the DHT                |')
+    print("|                The system finds the key's id by it's hash and           |")
+    print('|                determines the responsible node                          |')
+    print('|        delete  Deletes a key from the DHT                               |')
+    print("|                The system finds the key's id by it's hash and           |")
+    print('|                deletes the key and any replica of it                    |')
+    print("|        query   Find's the value of a key in the DHT                     |")
+    print("|                The system finds the key's id by it's hash and           |")
+    print("|                finds the key's value in the system                      |")
+    print("|        overlay Prints the DHT's topology                                |")
+    print("|        help    I wonder what help does                                  |")
+    print("---------------------------------------------------------------------------")
+    exit(0)
 else:
     exit(-1)
+
+socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket.connect((responseIP,responsePort))
 
 msg['responseNodeIP'] = responseIP
 msg['responseNodePort'] = str(responsePort)
