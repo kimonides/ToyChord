@@ -80,9 +80,9 @@ class Node:
             self.data[key]['ownerID']=int(request['insert']['ownerID'])
             request['insert']['replicaCount'] = replicaCount + 1
             if( request['insert']['replicaCount'] == k or self.data[key]['ownerID'] == self.next.id):
-                return self.sendResponse(request,'Finished adding all replicas\n')
+                return self.sendResponse(request,'OK')
             else:
-                self.send(request,self.next)
+                return self.send(request,self.next)
         else:
             print("I'm not responsible for id %s send to previous with ip %s" % (hash_key,self.previous.ip))
             return self.send(request,self.previous)
@@ -153,7 +153,8 @@ class Node:
             else:
                 return self.send(request,self.next)
         elif(key in self.data and (self.data[key]['replicaCount'] == k-1 or self.isNextNodeTerminal(request))):
-            resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
+            # resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
+            resp = self.data[key]['value']
             return self.sendResponse(request,resp)
         elif(self.isResponsible(key) and key not in self.data):
             return self.sendResponse(request,"Key %s doesn't exist in the DHT" % key)

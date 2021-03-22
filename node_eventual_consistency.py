@@ -155,7 +155,8 @@ class Node:
             else:
                 return self.send(request,self.next)
         elif(key in self.data):
-            resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
+            # resp = 'Query result is %s from %s:%s with id %s' % (self.data[key],self.ip,self.port,self.id)
+            resp = self.data[key]['value']
             return self.sendResponse(request,resp)
         elif(self.isResponsible(key)):
             return self.sendResponse(request,"Key %s doesn't exist in the DHT" % key)

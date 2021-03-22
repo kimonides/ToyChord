@@ -18,14 +18,18 @@ while IFS=',' read requestType key value
 do
     index=$(($RANDOM % $size))
     read -a strarr <<< "${VMs[$index]}"
+    key=$(echo $key | awk '{$1=$1;print}')
     if [ "$requestType" = "insert" ]; then
-        echo '{"responseNodePort": "'"${strarr[1]}"'", "insert": {"key": "'"$key"'", "replicaCount": 0, "value": "'"$value"'"}, "type": "insert", "responseNodeIP": "'"${strarr[0]}"'"}'\
-        | nc ${strarr[0]} ${strarr[1]} > /dev/null &
+        value=$(echo $value | awk '{$1=$1;print}')
+        # echo '{"responseNodePort": "'"${strarr[1]}"'", "insert": {"key": "'"$key"'", "replicaCount": 0, "value": "'"$value"'"}, "type": "insert", "responseNodeIP": "'"${strarr[0]}"'"}'\
+        # | nc ${strarr[0]} ${strarr[1]} > request_output 
+        echo "insert $key $value => $(echo '{"responseNodePort": "'"${strarr[1]}"'", "insert": {"key": "'"$key"'", "replicaCount": 0, "value": "'"$value"'"}, "type": "insert", "responseNodeIP": "'"${strarr[0]}"'"}' | nc ${strarr[0]} ${strarr[1]} )" >> request_output
     else
-        echo '{"responseNodePort": "'"${strarr[1]}"'", "query": {"key": "'"$key"'"}, "type": "query", "responseNodeIP": "'"${strarr[0]}"'"}'\
-        | nc ${strarr[0]} ${strarr[1]} > /dev/null &
+        # echo '{"responseNodePort": "'"${strarr[1]}"'", "query": {"key": "'"$key"'"}, "type": "query", "responseNodeIP": "'"${strarr[0]}"'"}'\
+        # | nc ${strarr[0]} ${strarr[1]} > request_output 
+        echo "query $key => $(echo '{"responseNodePort": "'"${strarr[1]}"'", "query": {"key": "'"$key"'"}, "type": "query", "responseNodeIP": "'"${strarr[0]}"'"}' | nc ${strarr[0]} ${strarr[1]} )" >> request_output
     fi
 done < requests.txt
 
-wait
+# wait
 
