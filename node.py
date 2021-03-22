@@ -59,9 +59,9 @@ class Node:
         value = request['redistribute']['value']
         ownerID = request['redistribute']['ownerID']
         replicaCount = int(request['redistribute']['replicaCount'])
-        self.data[key] = {'value':value,'replicaCount': k-replicaCount,'ownerID':ownerID }
+        self.data[key] = {'value':value,'replicaCount': replicaCount,'ownerID':ownerID }
         request['redistribute']['replicaCount'] = replicaCount + 1
-        if( self.next.id != ownerID and request['redistribute']['replicaCount'] == k):
+        if( self.next.id != ownerID and request['redistribute']['replicaCount'] < k):
             print('Sending %s to %s' % (repr(request),self.next.ip))
             self.next.connection.send(json.dumps(request))
 
@@ -125,7 +125,7 @@ class Node:
                     targetNode.connection.send(json.dumps({'type':'redistribute','redistribute':{'key':key,'value':value,'replicaCount':replicaCount,'ownerID':ownerID}}))
 
     def depart(self, request):
-        if(request['depart']['id'] == self.id):
+        if(int(request['depart']['id']) == self.id):
             msg = json.dumps({ 'type':'next','ip':self.next.ip,'port':self.next.port })
             self.previous.connection.send(msg)
             msg = json.dumps({ 'type':'prev','ip':self.previous.ip,'port':self.previous.port })
